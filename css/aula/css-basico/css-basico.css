@@ -1,3 +1,11 @@
-p {
+#titulo {
+    color: red;
+}
+
+#principal {
     color: blue;
+}
+
+.texto-verde {
+    color: green;
 }
