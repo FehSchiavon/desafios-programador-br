@@ -28,3 +28,10 @@ body {
 #background {
     background-image: url(https://img.freepik.com/vetores-gratis/fundo-abstrato-azul-formas-geometricas_1035-17545.jpg?size=626&ext=jpg);
 }
+
+#cm {
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+
