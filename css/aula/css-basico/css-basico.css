@@ -60,3 +60,9 @@ body {
     width: 10pt;
     height: 10pt;
 }
+/* 12 Pontos */
+#pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}
