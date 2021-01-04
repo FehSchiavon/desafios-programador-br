@@ -68,13 +68,25 @@ body {
 }
 
 /* UNIDADES RELATIVAS */
-
+/* vw = Medida Widht que é Largura, como se fosse em Porcentagem */
+/* vh = Medida Height que é Altura, como se fosse em Porcentagem */
 .container {
-    font-size: 20px;
+    width: 50vw;
+    background: red;
 }
-/* Inside ele multiplica o valor padrao definido pela quando quantidade colocar */
+/* Inside ele multiplica o valor padrao (font) definido pela quando quantidade colocar */
 /* em = Elemento */
 .inside {
-    font-size: 1em;
+    /* font-size: 1em; */
 }
+/* rem = Elemento RAIZ do HTML */
+.inside {
+    /* font-size: 1rem; */
+}
+/*  */
+.inside {
+    width: 100px;
+    background: blue;
+}
+
 
