@@ -68,3 +68,13 @@ body {
 }
 
 /* UNIDADES RELATIVAS */
+
+.container {
+    font-size: 20px;
+}
+/* Inside ele multiplica o valor padrao definido pela quando quantidade colocar */
+/* em = Elemento */
+.inside {
+    font-size: 1em;
+}
+
