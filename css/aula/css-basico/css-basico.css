@@ -66,3 +66,33 @@ body {
     width: 1pc;
     height: 1pc;
 }
+
+/* UNIDADES RELATIVAS */
+/* vw = Medida Widht que é Largura, como se fosse em Porcentagem */
+/* vh = Medida Height que é Altura, como se fosse em Porcentagem */
+/* vmin = Medida minimo entre Altura e Largura */
+/* vmax = Medida máximo entre Altura e Largura */
+
+.container {
+    width: 50vw;
+    background: red;
+}
+/* Inside ele multiplica o valor padrao (font) definido pela quando quantidade colocar */
+/* em = Elemento */
+.inside {
+    /* font-size: 1em; */
+}
+/* rem = Elemento RAIZ do HTML */
+.inside {
+    /* font-size: 1rem; */
+}
+/*  */
+.inside {
+    width: 100px;
+    background: blue;
+}
+
+
+/* Margim e Padding */
+/* Margim é medida externa */
+/* Padding é medida interna */
