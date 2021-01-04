@@ -70,6 +70,9 @@ body {
 /* UNIDADES RELATIVAS */
 /* vw = Medida Widht que é Largura, como se fosse em Porcentagem */
 /* vh = Medida Height que é Altura, como se fosse em Porcentagem */
+/* vmin = Medida minimo entre Altura e Largura */
+/* vmax = Medida máximo entre Altura e Largura */
+
 .container {
     width: 50vw;
     background: red;
