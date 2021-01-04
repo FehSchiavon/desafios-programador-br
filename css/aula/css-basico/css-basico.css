@@ -96,3 +96,17 @@ body {
 /* Margim e Padding */
 /* Margim é medida externa */
 /* Padding é medida interna */
+
+/* Border */
+.border {
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
