@@ -133,3 +133,14 @@ body {
     text-indent: 35px;
     text-decoration: line-through;
 }
+
+/* Fontes */
+.first {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: normal;
+    font-style: italic;
+    /* 400 é a normal */
+    font-weight: bold;
+    /* Mauscula mais de um form diferente */
+    font-variant: small-caps;
+}
