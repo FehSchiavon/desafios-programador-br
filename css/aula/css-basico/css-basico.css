@@ -127,3 +127,9 @@ body {
     border: 5px solid green;
     padding: 5px;
 }
+
+.first {
+    color: red;
+    text-indent: 35px;
+    text-decoration: line-through;
+}
