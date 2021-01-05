@@ -144,3 +144,32 @@ body {
     /* Mauscula mais de um form diferente */
     font-variant: small-caps;
 }
+
+/* Fonte Baixadas e Customizadas /otf /ttf/ woff*/
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+         url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  }
+
+  /* Estilos de Links */
+
+.links {
+    text-decoration: none;
+    cursor: crosshair;
+}
+
+/* Mudar a cor do link depois de clicado */
+.links:visited {
+    color: red;
+}
+
+/* Antes e Depois */
+.links:hover {
+    background-color: wheat;
+}
+
+/* Depois de clicado */
+.links:active {
+    background-color: red;
+}
