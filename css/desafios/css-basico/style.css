@@ -46,3 +46,9 @@ h1 {
 .socialMedia ul .youtube {
     list-style-image: url(./Imagens/Youtube.png);
 }
+
+.socialMedia ul .instagram,
+.socialMedia ul .twitter,
+.socialMedia ul .youtube {
+    
+}
