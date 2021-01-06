@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+.background {
+    background-color: #000;
+    height: 500px;
+}
+
+.content {
+    background-image: url(./Imagens/backgorund.png);
+    width: 700px;
+    height: 348px;
+    margin-left: auto;
+    margin-right: auto;
+}
