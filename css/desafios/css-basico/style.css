@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    border: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.background {
+    background-color: #000;
+    height: 500px;
+}
+
+.content {
+    background-image: url(./Imagens/backgorund.png);
+    width: 700px;
+    height: 348px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 20px solid #000;
+}
+
+.infoUser {
+    margin: 30px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.socialMedia {
+    margin-top: 50px;
+}
+
+.socialMedia ul {
+    list-style-type: none;
+}
+
+.socialMedia li {
+    font-size: 25px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.socialMedia ul li .instagram {
+    /* Anexar foto */
+}
