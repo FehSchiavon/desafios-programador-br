@@ -30,15 +30,25 @@ h1 {
     margin-top: 50px;
 }
 
-.socialMedia ul {
-    list-style-type: none;
-}
-
 .socialMedia li {
     font-size: 25px;
     margin-top: 30px;
     letter-spacing: 1px;
 }
-.socialMedia ul li .instagram {
-    /* Anexar foto */
+.socialMedia ul .instagram {
+    list-style-image: url(./Imagens/Insta.png);
+}
+
+.socialMedia ul .twitter {
+    list-style-image: url(./Imagens/Twitter.png);
+}
+
+.socialMedia ul .youtube {
+    list-style-image: url(./Imagens/Youtube.png);
+}
+
+.socialMedia ul .instagram,
+.socialMedia ul .twitter,
+.socialMedia ul .youtube {
+    
 }
