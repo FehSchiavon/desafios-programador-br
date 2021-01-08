@@ -8,10 +8,34 @@
                 font-size: 1.2rem;
             }
 
+            .static {
+                position: static;
+            }
+
+            .relative {
+                position: relative;
+                top: 15px;
+            }
+
+            .fixed {
+                position: fixed;
+            }
+
+            .absolute {
+                position: absolute;
+            }
+
             .quadrado {
                 width: 100px;
                 height: 100px;
-                display:;
+                display: inline-block;
+
+            }
+
+            .retangulo {
+                width: 100px;
+                height: 500px;
+                margin-top: 10px;
             }
 
             .bg-red {
@@ -22,15 +46,19 @@
                 background-color: blue;  
             }
 
+            .bg-green {
+                background-color: green;  
+            }
+
         </style>
 
     </head>
     <body>
-        <div class="quadrado bg-blue">
+        <div class="static quadrado bg-blue">
 
         </div>
 
-        <div class="quadrado bg-red">
+        <div class="relative quadrado bg-red">
 
         </div>
         
