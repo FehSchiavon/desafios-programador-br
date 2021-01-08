@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Position</title>
+        <style>
+            body {
+                font-size: 1.2rem;
+            }
+
+            .static {
+                position: static;
+            }
+
+            .relative {
+                position: relative;
+                top: 15px;
+            }
+
+            .fixed {
+                position: fixed;
+            }
+
+            .absolute {
+                position: absolute;
+            }
+
+            .sticky {
+                position: sticky;
+            }
+
+            .quadrado {
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+
+            }
+
+            .retangulo {
+                width: 100px;
+                height: 500px;
+                margin-top: 10px;
+            }
+
+            .bg-red {
+                background-color: red;
+            }
+
+            .bg-blue {
+                background-color: blue;  
+            }
+
+            .bg-green {
+                background-color: green;  
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="bg-blue retangulo">
+            <div class="bg-red quadrado"></div>
+            <div class="bg-red quadrado"></div>
+            <div class="bg-red quadrado"></div>
+            <div class="bg-red quadrado"></div>
+            <div class="bg-red quadrado"></div>
+        </div>
+        
+    </body>
+</html>
