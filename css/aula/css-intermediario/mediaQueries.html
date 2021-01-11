@@ -20,7 +20,6 @@
             }
 
             .menu {
-                display: inline-block;
                 list-style: none;
                 margin: 0px;
                 padding: 0px;
@@ -28,7 +27,32 @@
             }
 
             li {
-            
+                display: inline-block;
+                color: white;
+                margin-right: 15px; 
+            }
+
+            .logo {
+                float: left;
+                display: inline-block;
+                color: white;
+            }
+
+            @media screen and (max-width: 400px) {
+                .header {
+                    float: none;
+                    text-align: center;
+                }
+
+                .menu {
+                    float: none;
+                    text-align: center;
+                }
+
+                li {
+                    float: none;
+                    background-color: red;
+                }
             }
 
 
