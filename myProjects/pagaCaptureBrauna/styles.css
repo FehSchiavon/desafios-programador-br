@@ -18,6 +18,11 @@
 }
 
 .landPage header nav {
-    position: absolute;
-    margin: right;
+    float: right;
+
+}
+
+.landPage header nav a {
+    text-decoration: none;
+    background-color: white;
 }
