@@ -36,3 +36,11 @@
     border-radius: 70px;
     font-weight: bold;
 }
+
+main {
+    background-image: url(./assets/background.jpg);
+    width: 1440;
+    height: 520px;
+    object-fit: cover;
+}
+
