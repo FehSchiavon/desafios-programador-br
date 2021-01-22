@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     border: 0px;
+    font-family: Open Sans;
 }
 
 .landPage header {
@@ -18,6 +19,37 @@
 }
 
 .landPage header nav {
-    position: absolute;
-    margin: right;
+    float: right;
+    width: 485px;
+    height: 130px;
+    margin: 40px;
+    text-align: center;
+}
+
+.landPage header nav a {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #008037;
+    background-color: #fff;
+    font-size: 35px;
+    padding: 10px 88px;
+    border-radius: 70px;
+    font-weight: bold;
+}
+
+main {
+    background-image: url(./assets/background.jpg);
+    width: 1440;
+    height: 520px;
+    object-fit: cover;
+}
+
+main section .infoContent {
+    display: inline-block;
+}
+
+main section #empilhadeira img {
+    margin-top: 99px;
+    width: 321px;
+    height: 321px;
 }
