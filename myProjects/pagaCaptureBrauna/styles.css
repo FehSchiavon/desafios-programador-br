@@ -44,3 +44,12 @@ main {
     object-fit: cover;
 }
 
+main section .infoContent {
+    display: inline-block;
+}
+
+main section #empilhadeira img {
+    margin-top: 99px;
+    width: 321px;
+    height: 321px;
+}
