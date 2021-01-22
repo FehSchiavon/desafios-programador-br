@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     border: 0px;
+    font-family: Open Sans;
 }
 
 .landPage header {
@@ -19,10 +20,19 @@
 
 .landPage header nav {
     float: right;
-
+    width: 485px;
+    height: 130px;
+    margin: 40px;
+    text-align: center;
 }
 
 .landPage header nav a {
+    box-sizing: border-box;
     text-decoration: none;
-    background-color: white;
+    color: #008037;
+    background-color: #fff;
+    font-size: 35px;
+    padding: 10px 88px;
+    border-radius: 70px;
+    font-weight: bold;
 }
