@@ -56,7 +56,14 @@ main section #empilhadeira img {
 
 main section #empilhadeira .textEmpilhadeira {
     margin-top: 164px;
-    margin-right: 260px;
+    margin-right: 1200px;
     float: right;
 }
 
+@media screen and (max-width: 900px) {
+    main section #empilhadeira .textEmpilhadeira {
+        margin-top: 164px;
+        margin-right: 260px;
+        float: right;
+    }
+}
