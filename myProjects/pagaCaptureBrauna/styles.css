@@ -53,3 +53,9 @@ main section #empilhadeira img {
     width: 321px;
     height: 321px;
 }
+
+main section #empilhadeira .textEmpilhadeira {
+    clear: right;
+    clear: both;
+    /* float: right; */
+}
