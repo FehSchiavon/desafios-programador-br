@@ -55,7 +55,8 @@ main section #empilhadeira img {
 }
 
 main section #empilhadeira .textEmpilhadeira {
-    clear: right;
-    clear: both;
-    /* float: right; */
+    margin-top: 164px;
+    margin-right: 260px;
+    float: right;
 }
+
