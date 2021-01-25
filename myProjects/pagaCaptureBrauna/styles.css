@@ -54,6 +54,18 @@ main section #empilhadeira img {
     height: 321px;
 }
 
+main section #empilhadeira h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+main section #empilhadeira h2,
+main section #empilhadeira h3 {
+    font-size: 40px;
+    color: #fff;
+}
+
+
 /* Responsividade Normal */
 
 @media screen and (max-width: 1920px) {
@@ -125,5 +137,21 @@ main section #empilhadeira img {
         margin-top: 164px;
         margin-right: 0px;
         float: right;
+    }
+}
+
+/* Resposividade Tablet */
+
+@media screen and (max-width: 680px) {
+    main section #empilhadeira .textEmpilhadeira {
+        margin-top: 144px;
+        margin-right: 0px;
+        float: right;
+    }
+
+    main section #empilhadeira img {
+        margin-top: 99px;
+        width: 200px;
+        height: 200px;
     }
 }
