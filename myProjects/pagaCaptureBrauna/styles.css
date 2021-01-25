@@ -65,76 +65,75 @@ main section #empilhadeira h3 {
     color: #fff;
 }
 
-
 /* Responsividade Normal */
 
 @media screen and (max-width: 1920px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
-        margin-right: 1200px;
+        margin-top: 154px;
+        margin-right: 980px;
         float: right;
     }
 }
 
-@media screen and (max-width: 1890px) {
+@media screen and (max-width: 1912px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
-        margin-right: 1000px;
+        margin-top: 154px;
+        margin-right: 780px;
         float: right;
     }
 }
 
-@media screen and (max-width: 1690px) {
+@media screen and (max-width: 1700px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
-        margin-right: 800px;
+        margin-top: 154px;
+        margin-right: 680px;
         float: right;
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1610px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 600px;
         float: right;
     }
 }
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1530px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 400px;
         float: right;
     }
 }
 
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1330px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 200px;
         float: right;
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 1130px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 100px;
         float: right;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1030px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 40px;
         float: right;
     }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 970px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 164px;
+        margin-top: 154px;
         margin-right: 0px;
         float: right;
     }
@@ -142,7 +141,7 @@ main section #empilhadeira h3 {
 
 /* Resposividade Tablet */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 930px) {
     main section #empilhadeira .textEmpilhadeira {
         margin-top: 144px;
         margin-right: 0px;
@@ -153,5 +152,14 @@ main section #empilhadeira h3 {
         margin-top: 99px;
         width: 200px;
         height: 200px;
+    }
+
+    main section #empilhadeira h1 {
+        font-size: 40px;
+    }
+    
+    main section #empilhadeira h2,
+    main section #empilhadeira h3 {
+        font-size: 20px;
     }
 }
