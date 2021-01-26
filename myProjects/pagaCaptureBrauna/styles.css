@@ -5,7 +5,9 @@
 }
 
 body {
-    /* width: 1440px; */
+    margin: auto;
+    width: 1440px;
+    background-color: #008037;
 }
 
 .landPage header {
@@ -54,6 +56,7 @@ main section .infoContent {
 
 main section #empilhadeira img {
     margin-top: 99px;
+    margin-left: 44px;
     width: 321px;
     height: 321px;
 }
@@ -75,15 +78,14 @@ main section #seta img {
     transform: matrix(1, 0, 0, -1, 0, 0);
     float: right;
     margin-top: -400px;
-    /* margin-right: 600px; */
 }
 
 /* Responsividade Normal */
 
 @media screen and (max-width: 1920px) {
     main section #empilhadeira .textEmpilhadeira {
-        margin-top: 154px;
-        margin-right: 980px;
+        margin-top: 164px;
+        margin-right: 510px;
         float: right;
     }
 }
