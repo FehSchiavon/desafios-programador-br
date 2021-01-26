@@ -65,6 +65,12 @@ main section #empilhadeira h3 {
     color: #fff;
 }
 
+main section #seta img {
+    width: 313px;
+    height: 313px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
 /* Responsividade Normal */
 
 @media screen and (max-width: 1920px) {
