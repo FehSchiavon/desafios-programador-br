@@ -118,6 +118,7 @@ main section #seta img {
     width: 1440px;
     height: 182px;
     background-color: #008037;
+    text-align: center;
 }
 
 .landPage main .registeUsers p {
@@ -129,5 +130,28 @@ main section #seta img {
 }
 
 .landPage main .registeUsers .inputRegister {
+    margin-top: 15px;
+}
+
+.landPage main .registeUsers .inputRegister input {
+    width: 400px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.landPage main .registeUsers .inputRegisterName,
+.landPage main .registeUsers .inputRegisterEmail {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.landPage main .registeUsers .inputRegisterName::placeholder,
+.landPage main .registeUsers .inputRegisterEmail::placeholder {
+    color: #008037;
     
+}
+
+.landPage main .registeUsers .inputRegisterEmail,
+.landPage main .registeUsers .inputRegisterSubmit {
+    margin-left: 77px;
 }
