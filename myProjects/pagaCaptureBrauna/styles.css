@@ -111,3 +111,23 @@ main section #seta img {
         font-size: 20px;
     }
 }
+
+/* Barra de Captura de e-mail */
+
+.landPage main .registeUsers {
+    width: 1440px;
+    height: 182px;
+    background-color: #008037;
+}
+
+.landPage main .registeUsers p {
+    margin-top: 12px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+.landPage main .registeUsers .inputRegister {
+    
+}
