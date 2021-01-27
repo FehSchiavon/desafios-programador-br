@@ -143,12 +143,12 @@ main section #seta img {
 .landPage main .registeUsers .inputRegisterEmail {
     font-size: 35px;
     font-weight: 400;
+    padding-left: 34px;
 }
 
 .landPage main .registeUsers .inputRegisterName::placeholder,
 .landPage main .registeUsers .inputRegisterEmail::placeholder {
     color: #008037;
-    
 }
 
 .landPage main .registeUsers .inputRegisterEmail,
