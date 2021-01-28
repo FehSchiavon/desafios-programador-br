@@ -166,7 +166,15 @@ main section #seta img {
 }
 
 .landPage footer {
+    margin-top: 100px;
     width: 1440px;
     height: 193px;
     background-color: #333436;
+}
+
+.landPage footer .contatos,
+.landPage footer .whatsapp,
+.landPage footer .phone,
+.landPage footer .email {
+    display: inline-block;
 }
