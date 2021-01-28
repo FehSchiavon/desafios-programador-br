@@ -166,7 +166,35 @@ main section #seta img {
 }
 
 .landPage footer {
+    margin-top: 100px;
     width: 1440px;
     height: 193px;
     background-color: #333436;
+}
+
+.landPage footer .contatos,
+.landPage footer .whatsapp,
+.landPage footer .phone,
+.landPage footer .email {
+    display: inline-block;
+}
+
+.landPage footer .contatos {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.landPage footer .whatsapp p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.landPage footer .whatsapp img {
+    width: 42px;
+    height: 42px;
 }
