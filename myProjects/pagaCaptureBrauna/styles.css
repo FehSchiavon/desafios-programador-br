@@ -186,3 +186,15 @@ main section #seta img {
     font-weight: 700;
     color: #fff;
 }
+
+.landPage footer .whatsapp p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.landPage footer .whatsapp img {
+    width: 42px;
+    height: 42px;
+}
