@@ -178,3 +178,11 @@ main section #seta img {
 .landPage footer .email {
     display: inline-block;
 }
+
+.landPage footer .contatos {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
