@@ -7,7 +7,6 @@
 body {
     margin: auto;
     width: 1440px;
-    background-color: #008037;
 }
 
 .landPage header {
@@ -165,6 +164,8 @@ main section #seta img {
     color: #fff;
 }
 
+/* Footer */
+
 .landPage footer {
     margin-top: 100px;
     width: 1440px;
@@ -187,14 +188,21 @@ main section #seta img {
     color: #fff;
 }
 
-.landPage footer .whatsapp p {
+.landPage footer .whatsapp p,
+.landPage footer .phone p,
+.landPage footer .email p {
+    display: inline-block;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
     margin-left: 8px;
 }
 
-.landPage footer .whatsapp img {
+.landPage footer .whatsapp img,
+.landPage footer .phone img,
+.landPage footer .email img {
     width: 42px;
     height: 42px;
+    margin-bottom: -10px;
+    margin-left: 63px;
 }
