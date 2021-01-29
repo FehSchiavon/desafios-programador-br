@@ -164,8 +164,13 @@ main section #seta img {
     color: #fff;
 }
 
-.landPage main .registeUsers form input .inputRegisterSubmit {
+.landPage main .registeUsers .inputRegisterSubmit {
     cursor: pointer;
+}
+
+.landPage main .registeUsers .inputRegisterSubmit:hover {
+    background-color: #fff;
+    color: #008037;
 }
 
 /* Footer */
