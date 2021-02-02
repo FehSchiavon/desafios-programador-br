@@ -1,0 +1,1 @@
+alert("Integrando com arquivo externo")
