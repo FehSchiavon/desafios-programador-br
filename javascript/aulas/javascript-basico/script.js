@@ -3,7 +3,7 @@
 console.log("Oláá")
 
 
-// Tipos de Dados
+// ===Tipos de Dados=== //
 // Boolean
 // Null
 // Undefined
@@ -24,4 +24,14 @@ console.log(d)
 
 var e = true; // Boolean é Verdadeiro ou Falso
 console.log(e)
+
+// ===Operações aritméticas=== //
+
+// + Adição
+// - Subtração
+// * Multiplicação
+// / Divisão
+//  % Módulo
+// ++ Incremento
+// -- Decremento
 
