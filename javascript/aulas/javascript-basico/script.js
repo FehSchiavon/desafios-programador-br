@@ -2,8 +2,6 @@
 // Usando Console
 console.log("Oláá")
 
-var a = 10;
-console.log(a)
 
 // Tipos de Dados
 // Boolean
@@ -11,4 +9,19 @@ console.log(a)
 // Undefined
 // Number
 // String
+
+var a = "Palavra"; // String o \n coloca na proxima linha
+console.log(a)
+
+var b = 10; // Number
+console.log(b)
+
+var c =  // Undefined é indefinido
+console.log(c)
+
+var d = null; // Null é vazio
+console.log(d)
+
+var e = true; // Boolean é Verdadeiro ou Falso
+console.log(e)
 
