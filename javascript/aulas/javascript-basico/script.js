@@ -32,8 +32,8 @@ console.log(e)
 // * Multiplicação
 // / Divisão
 //  % Módulo é o resto da divisão
-// ++ Incremento
-// -- Decremento
+// ++ Incremento (ex: ++a adiciona antes / a++ adiciona depois)
+// -- Decremento (ex: --b adiciona antes / b-- adiciona depois)
 
 var a = 10;
 var b = 15;
