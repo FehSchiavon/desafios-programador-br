@@ -59,3 +59,20 @@ var ab = 30;
 // Assim da para ajustar o tamanho incremento que você quer ( += )
 a += 5;
 // Ficaria 35
+
+
+
+// ===Operadores Comparativos=== //
+
+// == igual a
+// === valor igual e igual
+// != não é igual
+// !== não igual ou não igual
+// > maior que
+// < menor de
+// >= Maior que ou igual a
+// <= Menor que ou igual a
+
+var op = 3;
+var com = 3;
+
