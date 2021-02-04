@@ -25,6 +25,8 @@ console.log(d)
 var e = true; // Boolean é Verdadeiro ou Falso
 console.log(e)
 
+
+
 // ===Operações aritméticas=== //
 
 // + Adição
@@ -40,3 +42,20 @@ var b = 15;
 
 var c = a % b;
 console.log(c)
+
+
+
+// ===Atribuições=== //
+
+// =    x = y   x = y
+// +=   x += y  x = x + y
+// -=   x -= y  x = x - y
+// *=   x *= y  x = x * y
+// /=   x /= y  x = x / y
+// %=   x %= y  x = x % y
+
+var ab = 30;
+
+// Assim da para ajustar o tamanho incremento que você quer ( += )
+a += 5;
+// Ficaria 35
