@@ -118,3 +118,7 @@ console.log("Idade", idade)
 console.log('Menor que dez', menor10)
 console.log("Maior que sessenta e cinco", maior65)
 console.log("Tem direiro a gratuidade", gratuidade);
+
+
+// ===STRING=== //
+// Ele falou um pouco mais concatenação 
