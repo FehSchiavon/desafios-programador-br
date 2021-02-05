@@ -122,3 +122,14 @@ console.log("Tem direiro a gratuidade", gratuidade);
 
 // ===STRING=== //
 // Ele falou um pouco mais concatenação 
+
+// ===Estruturas Condicionais IF / ELSE=== //
+
+// Exemplo de beber bebida alcoólica
+var idadeParaBeber = 17;
+
+if (idadeParaBeber >= 18) {
+    console.log("Pode beber")
+} else {
+    console.log("Não pode beber");
+}
