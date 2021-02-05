@@ -76,3 +76,49 @@ a += 5;
 var op = 3;
 var com = 3;
 
+
+
+// ===Operadores Lógicos=== //
+
+// && e // quanto um for falso todos vao ser falso
+// || ou // quantos somente os dois forem falsos ai vai ser falso
+// Negativo
+
+// var a = false;
+// var b = false;
+
+// var c = a && b
+
+// console.log(c)
+
+// Exemplo com validação de idade
+
+var idade = 25;
+
+var maior20 = idade > 20;
+var menor30 = idade < 30;
+
+var entre = maior20 && menor30
+
+console.log("Idade", idade)
+console.log("Maior que vinte", maior20)
+console.log('Menor que trinta', menor30)
+console.log("Entre 20 e 30", entre);
+
+// Passe de Onibus Gratis
+
+var idade = 10;
+
+var menor10 = idade <= 10;
+var maior65 = idade >= 65;
+
+var gratuidade = menor10 || maior65
+
+console.log("Idade", idade)
+console.log('Menor que dez', menor10)
+console.log("Maior que sessenta e cinco", maior65)
+console.log("Tem direiro a gratuidade", gratuidade);
+
+
+// ===STRING=== //
+// Ele falou um pouco mais concatenação 
