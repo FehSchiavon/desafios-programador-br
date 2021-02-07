@@ -122,3 +122,49 @@ console.log("Tem direiro a gratuidade", gratuidade);
 
 // ===STRING=== //
 // Ele falou um pouco mais concatenação 
+
+// ===Estruturas Condicionais IF / ELSE=== //
+console.log("=== Estruturas Condicionais IF / ELSE ===");
+// Exemplo de beber bebida alcoólica
+console.log("--- Exemplo de beber bebida alcoólica ---");
+var idadeParaBeber = 17;
+
+if (idadeParaBeber >= 18) {
+    console.log("Pode beber")
+} else {
+    console.log("Não pode beber");
+}
+
+
+// Transformando String em Numeros parseInt()
+console.log("=== Transformando String em Numeros ===");
+
+var ta = "3"
+var tb = "5"
+var tc = "7.3"
+// var totalc = ta + tb
+
+
+
+// Usa para número inteiros
+console.log("Usa para número inteiros - parseInt");
+
+var numeroInteiro = parseInt(ta) + parseInt(tb);
+console.log(numeroInteiro)
+
+
+
+// Usa para número quebrados
+console.log("Usa para número quebrados - parseFloat");
+
+var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
+console.log(numeorQuebrado)
+
+
+// Calculo no prompt?
+var numeroCalc = parseInt(prompt("Digite um número:"))
+
+var dobro = numeroCalc + numeroCalc
+
+// Usando Alert
+alert("O dobro de  " + numeroCalc + " é " + dobro)
