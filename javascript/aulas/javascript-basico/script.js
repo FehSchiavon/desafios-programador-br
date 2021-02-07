@@ -149,18 +149,22 @@ var tc = "7.3"
 // Usa para número inteiros
 console.log("Usa para número inteiros - parseInt");
 
-var parseInt = parseInt(ta) + parseInt(tb);
-console.log(parseInt)
+var numeroInteiro = parseInt(ta) + parseInt(tb);
+console.log(numeroInteiro)
 
 
 
 // Usa para número quebrados
 console.log("Usa para número quebrados - parseFloat");
 
-var parseFloat = parseFloat(ta) + parseFloat(tc)
-console.log(parseFloat)
+var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
+console.log(numeorQuebrado)
 
 
+// Calculo no prompt?
+var numeroCalc = parseInt(prompt("Digite um número:"))
+
+var dobro = numeroCalc + numeroCalc
 
 // Usando Alert
-alert("Bom dia Felipe")
+alert("O dobro de  " + numeroCalc + " é " + dobro)
