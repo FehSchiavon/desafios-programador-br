@@ -159,3 +159,8 @@ console.log("Usa para número quebrados - parseFloat");
 
 var parseFloat = parseFloat(ta) + parseFloat(tc)
 console.log(parseFloat)
+
+
+
+// Usando Alert
+alert("Bom dia Felipe")
