@@ -137,15 +137,25 @@ if (idadeParaBeber >= 18) {
 
 
 // Transformando String em Numeros parseInt()
-console.log("=== Transformando String em Numeros - parseInt() ===");
+console.log("=== Transformando String em Numeros ===");
 
 var ta = "3"
 var tb = "5"
+var tc = "7.3"
 // var totalc = ta + tb
 
+
+
 // Usa para número inteiros
-var totalc = parseInt(ta) + parseInt(tb);
+console.log("Usa para número inteiros - parseInt");
+
+var parseInt = parseInt(ta) + parseInt(tb);
+console.log(parseInt)
+
+
 
 // Usa para número quebrados
+console.log("Usa para número quebrados - parseFloat");
 
-console.log(totalc)
+var parseFloat = parseFloat(ta) + parseFloat(tc)
+console.log(parseFloat)
