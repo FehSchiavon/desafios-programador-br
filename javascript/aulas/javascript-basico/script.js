@@ -124,8 +124,9 @@ console.log("Tem direiro a gratuidade", gratuidade);
 // Ele falou um pouco mais concatenação 
 
 // ===Estruturas Condicionais IF / ELSE=== //
-
+console.log("=== Estruturas Condicionais IF / ELSE ===");
 // Exemplo de beber bebida alcoólica
+console.log("--- Exemplo de beber bebida alcoólica ---");
 var idadeParaBeber = 17;
 
 if (idadeParaBeber >= 18) {
@@ -133,3 +134,18 @@ if (idadeParaBeber >= 18) {
 } else {
     console.log("Não pode beber");
 }
+
+
+// Transformando String em Numeros parseInt()
+console.log("=== Transformando String em Numeros - parseInt() ===");
+
+var ta = "3"
+var tb = "5"
+// var totalc = ta + tb
+
+// Usa para número inteiros
+var totalc = parseInt(ta) + parseInt(tb);
+
+// Usa para número quebrados
+
+console.log(totalc)
