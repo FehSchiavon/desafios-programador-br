@@ -158,7 +158,7 @@ console.log(numeroInteiro)
 console.log("Usa para número quebrados - parseFloat");
 
 var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
-console.log(numeorQuebrado)
+console.log(numeroQuebrado)
 
 
 // Calculo no prompt?
@@ -168,3 +168,38 @@ var dobro = numeroCalc + numeroCalc
 
 // Usando Alert
 alert("O dobro de  " + numeroCalc + " é " + dobro)
+
+// Operador Ternário [Pode as vezes subistitir o IF]
+// === Operação ? true : false;=== //
+console.log("=== Operador Ternário ===");
+
+
+var idadeTernario = 17
+
+idadeTernario >= 18 ? console.log("Pode") : console.log("Não pode")
+var pode = idadeTernario >= 18 ? true : false;
+console.log(pode);
+
+
+
+// Switch
+console.log("Switch");
+
+var nota1 = 5.0;
+var note2 = 5.8;
+
+var media = (nota1 + nota2) / 2;
+
+
+
+switch (conceito) {
+    case "Ótimo" :
+    
+    case "Bom":
+
+    case "Regular" :
+
+    default:
+
+}
+
