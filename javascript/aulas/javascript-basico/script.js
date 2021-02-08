@@ -219,4 +219,9 @@ switch (conceito) {
         console.log("Houve algum erro");
         break;
 }
+// ==================== //
+
+
+// Laços ou Loop (For e While)
+console.log("=== Usando FOR e WHILE ===");
 
