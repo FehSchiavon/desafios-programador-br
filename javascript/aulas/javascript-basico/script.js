@@ -223,10 +223,23 @@ switch (conceito) {
 
 
 // Laços ou Loop (For e While)
-console.log("=== Usando FOR e WHILE ===");
+// For
+console.log("=== Usando FOR ===");
 
 var numeroFor = 5
 
 for (var vez = 0; vez < numeroFor; vez++) {
-    
+    console.log("Executando o FOR, pela " + vez + " Vez")
+}
+console.log("Acabou");
+
+
+// While
+console.log("=== Usando WHILE ===");
+
+var numeroWhile = 5
+
+while (numeroWhile < 10) {
+    console.log("Numero " + numeroWhile)
+    numeroWhile++
 }
