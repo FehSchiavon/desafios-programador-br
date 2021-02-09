@@ -247,3 +247,8 @@ while (numeroWhile < 10) {
 // Math.random() cria um numere entre (0 e 1)
 var valorAleatorio = Math.random()
 console.log(valorAleatorio)
+
+
+// ==================== //
+// Arrays
+
