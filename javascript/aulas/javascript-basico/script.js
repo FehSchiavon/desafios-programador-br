@@ -158,7 +158,7 @@ console.log(numeroInteiro)
 console.log("Usa para número quebrados - parseFloat");
 
 var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
-console.log(numeorQuebrado)
+console.log(numeroQuebrado)
 
 
 // Calculo no prompt?
@@ -168,3 +168,87 @@ var dobro = numeroCalc + numeroCalc
 
 // Usando Alert
 alert("O dobro de  " + numeroCalc + " é " + dobro)
+
+// Operador Ternário [Pode as vezes subistitir o IF]
+// === Operação ? true : false;=== //
+console.log("=== Operador Ternário ===");
+
+
+var idadeTernario = 17
+
+idadeTernario >= 18 ? console.log("Pode") : console.log("Não pode")
+var pode = idadeTernario >= 18 ? true : false;
+console.log(pode);
+
+
+
+// Switch
+console.log("Switch");
+
+var nota1 = 5.0;
+var nota2 = 5.8;
+
+var media = (nota1 + nota2) / 2;
+
+var conceito = "";
+
+// ==================== //
+if (media >= 8) {
+    conceito = "Ótimo"
+} else if (media >= 6.5) {
+    conceito = "Bom"
+} else {
+    conceito = "Regular"
+}
+
+console.log(media);
+console.log(conceito);
+// ==================== //
+
+switch (conceito) {
+    case "Ótimo" :
+        console.log("Parabéns você é um ótimo aluno")
+        break
+    case "Bom":
+        console.log("Você está quase perfeito")
+        break;
+    case "Regular" :
+        console.log("Estude mais um pouco");
+        break;
+    default:
+        console.log("Houve algum erro");
+        break;
+}
+// ==================== //
+
+
+// Laços ou Loop (For e While)
+// For
+console.log("=== Usando FOR ===");
+
+var numeroFor = 5
+
+for (var vez = 0; vez < numeroFor; vez++) {
+    console.log("Executando o FOR, pela " + vez + " Vez")
+}
+console.log("Acabou");
+
+
+// While
+console.log("=== Usando WHILE ===");
+
+var numeroWhile = 5
+
+while (numeroWhile < 10) {
+    console.log("Numero " + numeroWhile)
+    numeroWhile++
+}
+
+// Math.random() cria um numere entre (0 e 1)
+var valorAleatorio = Math.random()
+console.log(valorAleatorio)
+
+
+// ==================== //
+// Arrays
+
