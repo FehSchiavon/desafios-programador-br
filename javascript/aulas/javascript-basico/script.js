@@ -225,3 +225,8 @@ switch (conceito) {
 // Laços ou Loop (For e While)
 console.log("=== Usando FOR e WHILE ===");
 
+var numeroFor = 5
+
+for (var vez = 0; vez < numeroFor; vez++) {
+    
+}
