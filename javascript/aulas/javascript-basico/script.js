@@ -161,13 +161,14 @@ var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
 console.log(numeroQuebrado)
 
 
-// Calculo no prompt?
-var numeroCalc = parseInt(prompt("Digite um número:"))
+// Calculo no prompt
+console.log("===Usando Prompt===")
+// var numeroCalc = parseInt(prompt("Digite um número:"))
 
-var dobro = numeroCalc + numeroCalc
+// var dobro = numeroCalc + numeroCalc
 
 // Usando Alert
-alert("O dobro de  " + numeroCalc + " é " + dobro)
+// alert("O dobro de  " + numeroCalc + " é " + dobro)
 
 // Operador Ternário [Pode as vezes subistitir o IF]
 // === Operação ? true : false;=== //
@@ -245,10 +246,54 @@ while (numeroWhile < 10) {
 }
 
 // Math.random() cria um numere entre (0 e 1)
+console.log("=== Math.random() ===")
 var valorAleatorio = Math.random()
 console.log(valorAleatorio)
 
 
 // ==================== //
 // Arrays
+console.log("=== Arrays ===");
 
+var vetor = new Array();
+var vetor1 = [];
+
+var alunos = new Array("Igor", "Felipe", "Suzana");
+console.log(alunos[0])
+console.log(alunos.length);
+
+
+console.log("=== For Tradicional ===");
+for(var i = 0; i < alunos.length; i++) {
+    console.log(alunos[i])
+}
+
+console.log("=== For IN ==="); // For com IN ele pega o Index
+for (var i in alunos) {
+    console.log(alunos[i]);
+}
+
+console.log("=== For OF ==="); // For com OF ele vai pegar já o elemento lá dentro
+for (var i of alunos) {
+    console.log(i);
+}
+// ==================== //
+
+
+
+// Funções 
+console.log("=== Usando Function ===");
+
+function mediaFunction(n1, n2) {
+    var nota1 = n1;
+    var nota2 = n2;
+    var mediaFunction = (nota1 + nota2) / 2
+    // console.log(media);
+
+    return mediaFunction
+}
+
+var resultado1 = mediaFunction(3, 4)
+var resultado2 = mediaFunction(5, 8)
+
+console.log(resultado1 + " E " + resultado2)
