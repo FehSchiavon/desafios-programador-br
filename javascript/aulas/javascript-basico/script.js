@@ -262,6 +262,24 @@ var alunos = new Array("Igor", "Felipe", "Suzana");
 console.log(alunos[0])
 console.log(alunos.length);
 
+
+console.log("=== For Tradicional ===");
 for(var i = 0; i < alunos.length; i++) {
     console.log(alunos[i])
 }
+
+console.log("=== For IN ==="); // For com IN ele pega o Index
+for (var i in alunos) {
+    console.log(alunos[i]);
+}
+
+console.log("=== For OF ==="); // For com OF ele vai pegar já o elemento lá dentro
+for (var i of alunos) {
+    console.log(i);
+}
+// ==================== //
+
+
+
+// Funções 
+console.log("=== Usando Function ===");
