@@ -284,11 +284,16 @@ for (var i of alunos) {
 // Funções 
 console.log("=== Usando Function ===");
 
-function mediaFunction() {
-    var nota1 = 10;
-    var nota2 = 8;
-    var media = (nota1 + nota2) / 2
-    console.log(media);
+function mediaFunction(n1, n2) {
+    var nota1 = n1;
+    var nota2 = n2;
+    var mediaFunction = (nota1 + nota2) / 2
+    // console.log(media);
+
+    return mediaFunction
 }
 
-mediaFunction()
+var resultado1 = mediaFunction(3, 4)
+var resultado2 = mediaFunction(5, 8)
+
+console.log(resultado1 + " E " + resultado2)
