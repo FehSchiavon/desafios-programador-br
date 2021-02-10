@@ -161,13 +161,14 @@ var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
 console.log(numeroQuebrado)
 
 
-// Calculo no prompt?
-var numeroCalc = parseInt(prompt("Digite um número:"))
+// Calculo no prompt
+console.log("===Usando Prompt===")
+// var numeroCalc = parseInt(prompt("Digite um número:"))
 
-var dobro = numeroCalc + numeroCalc
+// var dobro = numeroCalc + numeroCalc
 
 // Usando Alert
-alert("O dobro de  " + numeroCalc + " é " + dobro)
+// alert("O dobro de  " + numeroCalc + " é " + dobro)
 
 // Operador Ternário [Pode as vezes subistitir o IF]
 // === Operação ? true : false;=== //
@@ -245,10 +246,22 @@ while (numeroWhile < 10) {
 }
 
 // Math.random() cria um numere entre (0 e 1)
+console.log("=== Math.random() ===")
 var valorAleatorio = Math.random()
 console.log(valorAleatorio)
 
 
 // ==================== //
 // Arrays
+console.log("=== Arrays ===");
 
+var vetor = new Array();
+var vetor1 = [];
+
+var alunos = new Array("Igor", "Felipe", "Suzana");
+console.log(alunos[0])
+console.log(alunos.length);
+
+for(var i = 0; i < alunos.length; i++) {
+    console.log(alunos[i])
+}
