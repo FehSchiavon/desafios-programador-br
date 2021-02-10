@@ -283,3 +283,12 @@ for (var i of alunos) {
 
 // Funções 
 console.log("=== Usando Function ===");
+
+function mediaFunction() {
+    var nota1 = 10;
+    var nota2 = 8;
+    var media = (nota1 + nota2) / 2
+    console.log(media);
+}
+
+mediaFunction()
