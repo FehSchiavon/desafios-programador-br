@@ -297,3 +297,38 @@ var resultado1 = mediaFunction(3, 4)
 var resultado2 = mediaFunction(5, 8)
 
 console.log(resultado1 + " E " + resultado2)
+
+// Saudação Exemplo
+
+function saudacao() {
+    return "Olá Mundo"
+}
+
+// var s = saudacao()
+// console.log(s)
+
+// ou sendo que na segunda ele chama propria variavel
+
+var s = saudacao
+console.log(s())
+
+
+
+// Function Anonima são (Funcões dentro de Variveis)
+console.log("=== Function Anônima Normal ===");
+
+var mediaAnonima = function (n1, n2) {
+    return (n1 + n2) / 2
+}
+
+console.log(mediaAnonima(5, 6));
+
+// Ou Arrow Function
+console.log("=== Função Anônima Em Arrow Function===");
+
+var mediaAnonima = (n1, n2) => {
+    return (n1 + n2) / 2
+}
+
+console.log(mediaAnonima(5, 6));
+
