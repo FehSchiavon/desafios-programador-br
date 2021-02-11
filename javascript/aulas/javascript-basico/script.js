@@ -299,3 +299,15 @@ var resultado2 = mediaFunction(5, 8)
 console.log(resultado1 + " E " + resultado2)
 
 // Saudação
+
+function saudacao() {
+    return "Olá Mundo"
+}
+
+// var s = saudacao()
+// console.log(s)
+
+// ou sendo que na segunda ele chama propria variavel
+
+var s = saudacao
+console.log(s())
