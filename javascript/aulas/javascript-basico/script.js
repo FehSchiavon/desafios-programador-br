@@ -297,3 +297,5 @@ var resultado1 = mediaFunction(3, 4)
 var resultado2 = mediaFunction(5, 8)
 
 console.log(resultado1 + " E " + resultado2)
+
+// Saudação
