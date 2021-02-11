@@ -298,7 +298,7 @@ var resultado2 = mediaFunction(5, 8)
 
 console.log(resultado1 + " E " + resultado2)
 
-// Saudação
+// Saudação Exemplo
 
 function saudacao() {
     return "Olá Mundo"
@@ -311,3 +311,24 @@ function saudacao() {
 
 var s = saudacao
 console.log(s())
+
+
+
+// Function Anonima são (Funcões dentro de Variveis)
+console.log("=== Function Anônima Normal ===");
+
+var mediaAnonima = function (n1, n2) {
+    return (n1 + n2) / 2
+}
+
+console.log(mediaAnonima(5, 6));
+
+// Ou Arrow Function
+console.log("=== Função Anônima Em Arrow Function===");
+
+var mediaAnonima = (n1, n2) => {
+    return (n1 + n2) / 2
+}
+
+console.log(mediaAnonima(5, 6));
+
