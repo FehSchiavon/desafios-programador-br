@@ -337,6 +337,29 @@ console.log("=== Juntando tudo até aqui ===");
 
 // Nome do aluno - nota 1 - nota 2 - média = Aprovado / Reprovado
 
-var nomes = [];
-var notaA = [];
-var notaB = [];
+var nomes = ["Igor", "Felipe", "Suzana"];
+var notaA = [7.0 , 6.5, 9.5];
+var notaB = [8.0, 7.0 , 8.5];
+
+function mediaAlunos(n1, n2) {
+    return (n1 + n2) / 2
+}
+
+function passou(media) {
+    
+    if (media > 7) {
+        return "Aprovado"
+    } else {
+        return "Reprovado"
+    }
+}
+
+for (var index in nomes) {
+
+    var nota1Alunos = notaA[index];
+    var nota2Alunos = notaB[index];
+    var m = media(nota1Alunos, nota2Alunos)
+    
+    console.log(nomes[index] + " - " + nota1Alunos + " - " + nota2Alunos + " - " + m + " - " + passou(m))
+}
+
