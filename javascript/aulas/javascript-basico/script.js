@@ -332,3 +332,6 @@ var mediaAnonima = (n1, n2) => {
 
 console.log(mediaAnonima(5, 6));
 
+// Juntando tudo até aqui
+console.log("=== Juntando tudo até aqui ===");
+
