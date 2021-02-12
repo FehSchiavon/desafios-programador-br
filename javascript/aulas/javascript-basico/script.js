@@ -335,3 +335,8 @@ console.log(mediaAnonima(5, 6));
 // Juntando tudo até aqui
 console.log("=== Juntando tudo até aqui ===");
 
+// Nome do aluno - nota 1 - nota 2 - média = Aprovado / Reprovado
+
+var nomes = [];
+var notaA = [];
+var notaB = [];
