@@ -545,3 +545,4 @@ console.log(alunoObjetoMetodos2.media());
 
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
+// Iniciando 
