@@ -504,24 +504,30 @@ console.log(alunoNewAll);
 // Objetos Métodos
 console.log("=== Objetos Métodos ===");
 
+// Criando um Método
+function calcMedia (n1, n2) {
+    return (this.notas[0] + this.notas[1]) / 2
+}
+
+
 var alunoObjetoMetodos = {
     nome: "Suzana",
     notas: [5, 8],
     
-    media: function(n1, n2) {
-        return (n1, n2) / 2
-    }
+    media: calcMedia
 }
 
 console.log(alunoObjetoMetodos.nome);
-console.log(alunoObjetoMetodos.media(alunoObjetoMetodos.notas[0], alunoObjetoMetodos.notas[1]));
+console.log(alunoObjetoMetodos.media());
 
 
 var alunoObjetoMetodos2 = {
     nome: "Gabriel",
-    notas: [5, 8],
+    notas: [7, 4],
     
-    media: function(n1, n2) {
-        return (n1, n2) / 2
-    }
+    media: calcMedia
 }
+
+console.log(alunoObjetoMetodos2.nome);
+console.log(alunoObjetoMetodos2.media());
+
