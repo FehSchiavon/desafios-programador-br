@@ -363,3 +363,8 @@ for (var index in nomes) {
     console.log(nomes[index] + " - " + nota1Alunos + " - " + nota2Alunos + " - " + m + " - " + passou(m))
 }
 
+
+
+
+// Objetos - Propriedades
+console.log("=== Objetos - Propriedades ===");
