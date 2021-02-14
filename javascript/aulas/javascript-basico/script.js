@@ -531,3 +531,17 @@ var alunoObjetoMetodos2 = {
 console.log(alunoObjetoMetodos2.nome);
 console.log(alunoObjetoMetodos2.media());
 
+
+
+
+
+
+
+
+
+
+
+
+
+// Objetos Construtores
+console.log("=== Objetos Construtores ===");
