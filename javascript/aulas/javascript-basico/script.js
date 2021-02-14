@@ -120,6 +120,20 @@ console.log("Maior que sessenta e cinco", maior65)
 console.log("Tem direiro a gratuidade", gratuidade);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ===STRING=== //
 // Ele falou um pouco mais concatenação 
 
@@ -161,6 +175,19 @@ var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
 console.log(numeroQuebrado)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Calculo no prompt
 console.log("===Usando Prompt===")
 // var numeroCalc = parseInt(prompt("Digite um número:"))
@@ -180,6 +207,19 @@ var idadeTernario = 17
 idadeTernario >= 18 ? console.log("Pode") : console.log("Não pode")
 var pode = idadeTernario >= 18 ? true : false;
 console.log(pode);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,6 +263,19 @@ switch (conceito) {
 // ==================== //
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Laços ou Loop (For e While)
 // For
 console.log("=== Usando FOR ===");
@@ -252,6 +305,17 @@ console.log(valorAleatorio)
 
 
 // ==================== //
+
+
+
+
+
+
+
+
+
+
+
 // Arrays
 console.log("=== Arrays ===");
 
@@ -278,6 +342,15 @@ for (var i of alunos) {
     console.log(i);
 }
 // ==================== //
+
+
+
+
+
+
+
+
+
 
 
 
@@ -366,6 +439,13 @@ for (var index in nomes) {
 
 
 
+
+
+
+
+
+
+
 // Objetos - Propriedades
 console.log("=== Objetos - Propriedades ===");
 
@@ -392,3 +472,33 @@ console.log(alunoObjeto["notas"][0])
 
 // Visão geral do Objeto
 console.log(alunoObjeto);
+
+
+// Criado um objeto com New
+console.log("=== Criando objeto com - new Object() ===");
+
+var alunoNew = new Object()
+alunoNew.nome = "Felipe"
+alunoNew.notas = 8.5;
+console.log(alunoNew);
+
+// =============================== //
+
+var alunoNewAll = new Object({
+    nome: "Pedro",
+    notas: 7.7
+})
+console.log(alunoNewAll);
+
+
+
+
+
+
+
+
+
+
+
+
+// Objetos Métodos
