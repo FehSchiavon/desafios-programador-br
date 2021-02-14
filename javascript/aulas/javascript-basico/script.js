@@ -502,3 +502,26 @@ console.log(alunoNewAll);
 
 
 // Objetos Métodos
+console.log("=== Objetos Métodos ===");
+
+var alunoObjetoMetodos = {
+    nome: "Suzana",
+    notas: [5, 8],
+    
+    media: function(n1, n2) {
+        return (n1, n2) / 2
+    }
+}
+
+console.log(alunoObjetoMetodos.nome);
+console.log(alunoObjetoMetodos.media(alunoObjetoMetodos.notas[0], alunoObjetoMetodos.notas[1]));
+
+
+var alunoObjetoMetodos2 = {
+    nome: "Gabriel",
+    notas: [5, 8],
+    
+    media: function(n1, n2) {
+        return (n1, n2) / 2
+    }
+}
