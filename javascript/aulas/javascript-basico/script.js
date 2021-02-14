@@ -358,7 +358,7 @@ for (var index in nomes) {
 
     var nota1Alunos = notaA[index];
     var nota2Alunos = notaB[index];
-    var m = media(nota1Alunos, nota2Alunos)
+    var m = mediaAlunos(nota1Alunos, nota2Alunos)
     
     console.log(nomes[index] + " - " + nota1Alunos + " - " + nota2Alunos + " - " + m + " - " + passou(m))
 }
@@ -368,3 +368,10 @@ for (var index in nomes) {
 
 // Objetos - Propriedades
 console.log("=== Objetos - Propriedades ===");
+
+var alunoObjeto = {
+    nome: "Igor",
+    nota1: 7.5,
+}
+
+console.log(alunoObjeto.nome)
