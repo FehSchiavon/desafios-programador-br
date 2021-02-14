@@ -371,7 +371,24 @@ console.log("=== Objetos - Propriedades ===");
 
 var alunoObjeto = {
     nome: "Igor",
-    nota1: 7.5,
+    notas: [7.5, 5.0],
 }
 
+// Variaveis sendo crias fora do Objeto
+alunoObjeto.matricula = 1234;
+alunoObjeto["sobrenome"] = "Oliveira"
+
+// Outra forma de inserir uma variavel dentro de um Objeto
+var nomeDeUmaNovaPropriedade = "lastName"
+alunoObjeto[nomeDeUmaNovaPropriedade] = "Julio"
+
+// Duas formas de chamar os dados
 console.log(alunoObjeto.nome)
+console.log(alunoObjeto["nome"])
+
+// Formas de chamar a Propriedade do Objeto
+console.log(alunoObjeto.notas[0])
+console.log(alunoObjeto["notas"][0])
+
+// Visão geral do Objeto
+console.log(alunoObjeto);
