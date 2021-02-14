@@ -120,6 +120,20 @@ console.log("Maior que sessenta e cinco", maior65)
 console.log("Tem direiro a gratuidade", gratuidade);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ===STRING=== //
 // Ele falou um pouco mais concatenação 
 
@@ -161,6 +175,19 @@ var numeroQuebrado = parseFloat(ta) + parseFloat(tc)
 console.log(numeroQuebrado)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Calculo no prompt
 console.log("===Usando Prompt===")
 // var numeroCalc = parseInt(prompt("Digite um número:"))
@@ -180,6 +207,19 @@ var idadeTernario = 17
 idadeTernario >= 18 ? console.log("Pode") : console.log("Não pode")
 var pode = idadeTernario >= 18 ? true : false;
 console.log(pode);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,6 +263,19 @@ switch (conceito) {
 // ==================== //
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Laços ou Loop (For e While)
 // For
 console.log("=== Usando FOR ===");
@@ -252,6 +305,17 @@ console.log(valorAleatorio)
 
 
 // ==================== //
+
+
+
+
+
+
+
+
+
+
+
 // Arrays
 console.log("=== Arrays ===");
 
@@ -278,6 +342,15 @@ for (var i of alunos) {
     console.log(i);
 }
 // ==================== //
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,8 +431,117 @@ for (var index in nomes) {
 
     var nota1Alunos = notaA[index];
     var nota2Alunos = notaB[index];
-    var m = media(nota1Alunos, nota2Alunos)
+    var m = mediaAlunos(nota1Alunos, nota2Alunos)
     
     console.log(nomes[index] + " - " + nota1Alunos + " - " + nota2Alunos + " - " + m + " - " + passou(m))
 }
 
+
+
+
+
+
+
+
+
+
+
+// Objetos - Propriedades
+console.log("=== Objetos - Propriedades ===");
+
+var alunoObjeto = {
+    nome: "Igor",
+    notas: [7.5, 5.0],
+}
+
+// Variaveis sendo crias fora do Objeto
+alunoObjeto.matricula = 1234;
+alunoObjeto["sobrenome"] = "Oliveira"
+
+// Outra forma de inserir uma variavel dentro de um Objeto
+var nomeDeUmaNovaPropriedade = "lastName"
+alunoObjeto[nomeDeUmaNovaPropriedade] = "Julio"
+
+// Duas formas de chamar os dados
+console.log(alunoObjeto.nome)
+console.log(alunoObjeto["nome"])
+
+// Formas de chamar a Propriedade do Objeto
+console.log(alunoObjeto.notas[0])
+console.log(alunoObjeto["notas"][0])
+
+// Visão geral do Objeto
+console.log(alunoObjeto);
+
+
+// Criado um objeto com New
+console.log("=== Criando objeto com - new Object() ===");
+
+var alunoNew = new Object()
+alunoNew.nome = "Felipe"
+alunoNew.notas = 8.5;
+console.log(alunoNew);
+
+// =============================== //
+
+var alunoNewAll = new Object({
+    nome: "Pedro",
+    notas: 7.7
+})
+console.log(alunoNewAll);
+
+
+
+
+
+
+
+
+
+
+
+
+// Objetos Métodos
+console.log("=== Objetos Métodos ===");
+
+// Criando um Método
+function calcMedia (n1, n2) {
+    return (this.notas[0] + this.notas[1]) / 2
+}
+
+
+var alunoObjetoMetodos = {
+    nome: "Suzana",
+    notas: [5, 8],
+    
+    media: calcMedia
+}
+
+console.log(alunoObjetoMetodos.nome);
+console.log(alunoObjetoMetodos.media());
+
+
+var alunoObjetoMetodos2 = {
+    nome: "Gabriel",
+    notas: [7, 4],
+    
+    media: calcMedia
+}
+
+console.log(alunoObjetoMetodos2.nome);
+console.log(alunoObjetoMetodos2.media());
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Objetos Construtores
+console.log("=== Objetos Construtores ===");
