@@ -545,4 +545,20 @@ console.log(alunoObjetoMetodos2.media());
 
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
-// Iniciando 
+
+var calcMediaTurma = function() {
+    return (this.nota1 + this.nota2) / 2
+}
+
+var turma = [
+    {
+        nome: "Igor",
+        nota1: 9,
+        nota2: 7,
+        media: calcMediaTurma()
+    }
+]
+
+var alunoTurma = turma[0]
+console.log(alunoTurma);
+console.log(alunoTurma.media);
