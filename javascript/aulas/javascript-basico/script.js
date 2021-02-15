@@ -546,19 +546,27 @@ console.log(alunoObjetoMetodos2.media());
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
 
-var calcMediaTurma = function() {
-    return (this.nota1 + this.nota2) / 2
+
+function criarAluno(nome, n1, n2) {
+    return {
+        nome: nome,
+        nota1: n1,
+        nota2: n2,
+        media: function() {
+            return (this.nota1 + this.nota2) / 2
+        }
+    }
 }
 
 var turma = [
-    {
-        nome: "Igor",
-        nota1: 9,
-        nota2: 7,
-        media: calcMediaTurma()
-    }
+    criarAluno("Felipe", 8, 7.2),
+    criarAluno("Suzana", 9, 8.7),
+    criarAluno("Igor", 5, 6.7)
 ]
 
-var alunoTurma = turma[0]
+var alunoTurma = turma[2]
+
+
+
 console.log(alunoTurma);
-console.log(alunoTurma.media);
+console.log(alunoTurma.media());
