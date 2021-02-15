@@ -566,7 +566,13 @@ var turma = [
 
 var alunoTurma = turma[2]
 
+// Métodos tradicional
+for(var alunoTurma of turma) {
+    console.log(turma);
+}
 
+// Metodo mais moderno
+turma.forEach(function (elemento) {
+    console.log(elemento);
+})
 
-console.log(alunoTurma);
-console.log(alunoTurma.media());
