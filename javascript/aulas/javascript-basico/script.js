@@ -545,3 +545,34 @@ console.log(alunoObjetoMetodos2.media());
 
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
+
+
+function criarAluno(nome, n1, n2) {
+    return {
+        nome: nome,
+        nota1: n1,
+        nota2: n2,
+        media: function() {
+            return (this.nota1 + this.nota2) / 2
+        }
+    }
+}
+
+var turma = [
+    criarAluno("Felipe", 8, 7.2),
+    criarAluno("Suzana", 9, 8.7),
+    criarAluno("Igor", 5, 6.7)
+]
+
+var alunoTurma = turma[2]
+
+// Métodos tradicional
+for(var alunoTurma of turma) {
+    console.log(alunoTurma.nome + " - " + alunoTurma.media());
+}
+
+// Metodo mais moderno
+turma.forEach(function (elemento) {
+    console.log(elemento);
+})
+
