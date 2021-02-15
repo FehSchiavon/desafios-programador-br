@@ -568,7 +568,7 @@ var alunoTurma = turma[2]
 
 // Métodos tradicional
 for(var alunoTurma of turma) {
-    console.log(turma);
+    console.log(alunoTurma.nome + " - " + alunoTurma.media());
 }
 
 // Metodo mais moderno
