@@ -552,14 +552,26 @@ function alunoTurma(nome, n1, n2) {
     this.nome = nome;
     this.nota1 = n1;
     this.nota2 = n2;
-    function media() {
+    this.media = function () {
         return (this.nota1 + this.nota2) / 2
     }
 }
 
 var a = new alunoTurma("Igor", 9, 4.5)
 console.log(a)
+console.log(a.media());
+
+var b = new alunoTurma("Pedro", 6, 4.5)
+console.log(b)
+console.log(b.media());
+
 console.log("=== ================================== ===");
+
+
+
+
+
+
 
 
 // Uma forma de criar um constructor (Tradicional)
