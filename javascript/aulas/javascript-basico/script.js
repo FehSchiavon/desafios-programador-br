@@ -546,7 +546,7 @@ console.log(alunoObjetoMetodos2.media());
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
 
-
+// Uma forma de criar um constructor
 function criarAluno(nome, n1, n2) {
     return {
         nome: nome,
@@ -557,6 +557,9 @@ function criarAluno(nome, n1, n2) {
         }
     }
 }
+
+// Mais outra forma de criar outro construtor
+
 
 var turma = [
     criarAluno("Felipe", 8, 7.2),
