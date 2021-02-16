@@ -546,7 +546,25 @@ console.log(alunoObjetoMetodos2.media());
 // Objetos Construtores
 console.log("=== Objetos Construtores ===");
 
-// Uma forma de criar um constructor
+// Mais outra forma de criar outro construtor 
+console.log("=== Outra forma de criar um constructor ===");
+function alunoTurma(nome, n1, n2) {
+    this.nome = nome;
+    this.nota1 = n1;
+    this.nota2 = n2;
+    function media() {
+        return (this.nota1 + this.nota2) / 2
+    }
+}
+
+var a = new alunoTurma("Igor", 9, 4.5)
+console.log(a)
+console.log("=== ================================== ===");
+
+
+// Uma forma de criar um constructor (Tradicional)
+console.log("=== Criando Constructor da forma Tradicional ===");
+
 function criarAluno(nome, n1, n2) {
     return {
         nome: nome,
@@ -558,23 +576,22 @@ function criarAluno(nome, n1, n2) {
     }
 }
 
-// Mais outra forma de criar outro construtor
-
-
 var turma = [
     criarAluno("Felipe", 8, 7.2),
     criarAluno("Suzana", 9, 8.7),
     criarAluno("Igor", 5, 6.7)
 ]
 
-var alunoTurma = turma[2]
+console.log(turma)
 
 // Métodos tradicional
+console.log("=== For Tradicional ===");
 for(var alunoTurma of turma) {
     console.log(alunoTurma.nome + " - " + alunoTurma.media());
 }
 
 // Metodo mais moderno
+console.log("=== Usando forEach mais Moderno ===");
 turma.forEach(function (elemento) {
     console.log(elemento);
 })
