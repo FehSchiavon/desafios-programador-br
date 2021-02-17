@@ -608,3 +608,6 @@ turma.forEach(function (elemento) {
     console.log(elemento);
 })
 
+// Resumo de como trabalhar com Objetos
+console.log("=== RESUMÃO: OBJETOS ===");
+
