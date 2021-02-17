@@ -557,6 +557,7 @@ function alunoTurma(nome, n1, n2) {
     }
 }
 
+// Lembrando que precisa do New para a função a cima retornar o objeto
 var a = new alunoTurma("Igor", 9, 4.5)
 console.log(a)
 console.log(a.media());
@@ -608,3 +609,13 @@ turma.forEach(function (elemento) {
     console.log(elemento);
 })
 
+// Resumo de como trabalhar com Objetos
+console.log("=== RESUMÃO: OBJETOS ===");
+
+function obj(n, s) {
+    this.nome = n;
+    this.sobrenome = s;
+}
+
+const resumoObj = new obj("Felipe", "Schiavon")
+console.log(resumoObj);
