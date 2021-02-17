@@ -619,3 +619,28 @@ function obj(n, s) {
 
 const resumoObj = new obj("Felipe", "Schiavon")
 console.log(resumoObj);
+
+
+
+
+
+
+
+
+
+
+// Usando DATAS
+console.log("=== DATAS ==="); 
+
+var d = new Date();
+// var d = new Date(year, month, day, hours, minutes, seconds, milliseconds); Preenchendo manualmente
+// Quando passamos o mês em formato de número ele consulta um Array de meses, 12 posições, onde 0 = Janeiro e 11 = Dez.
+// var d = new Date(1000); Quando usado somente um numero é contado como ===[milliseconds]===
+console.log(d);
+var dias = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+console.log(d.getDay()); //Pega o index da semana que esta este dia
+console.log(dias[d.getDay()]); // Você consegui modificar da forma que desejar
+
+// SET nas datas ele muda o dia, mes, ano que você quiser
+console.log(d.setFullYear(3000)); // Só que ele presenta em milliseconds
+console.log(d); // Porém altera lá na metodos primario
