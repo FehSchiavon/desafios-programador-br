@@ -644,3 +644,17 @@ console.log(dias[d.getDay()]); // Você consegui modificar da forma que desejar
 // SET nas datas ele muda o dia, mes, ano que você quiser
 console.log(d.setFullYear(3000)); // Só que ele presenta em milliseconds
 console.log(d); // Porém altera lá na metodos primario
+
+
+
+
+
+
+
+
+
+
+
+// Três tipos de variaveis Const, let e var
+console.log("=== Const / Let / Var ===");
+
