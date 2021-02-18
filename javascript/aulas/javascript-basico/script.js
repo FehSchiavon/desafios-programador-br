@@ -658,3 +658,8 @@ console.log(d); // Porém altera lá na metodos primario
 // Três tipos de variaveis Const, let e var
 console.log("=== Const / Let / Var ===");
 
+var numero1 = 4;
+let numero2 = 5;
+const numero3 = 6;
+console.log(numero1, numero2, numero3);
+
