@@ -30,3 +30,18 @@ console.log(paragrafos);
 
 let paragrafosId = document.getElementById("p1")
 console.log(paragrafosId);
+
+let todosParagrafos = document.getElementsByTagName("p")
+console.log(todosParagrafos);
+
+
+
+
+
+
+// Modificando elementos três forma
+console.log("=== Modificando Elementos ===");
+let p = document.getElementById("p1")
+p.innerHTML = "Novo Conteúdo innetHTML" // Da para colocar Tags HTML como h1, p, body
+p.innerText = "Novo Conteúdo innerText" // Não dá para colocar tags HTML, porem vai mostrar mais o que esta na tela
+p.textContent = "Novo Conteúdo textContent" // Não dá para colocar tags HTML, agora o textContent vai mostra o texto e mais o que estiver lá no HTML também
