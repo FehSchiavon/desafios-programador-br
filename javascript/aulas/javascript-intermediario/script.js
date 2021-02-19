@@ -16,4 +16,17 @@ console.log(document);
 // Acessando o Body
 console.log(document.body);
 // Escrevendo dentro do Body
-console.log(document.body.innerHTML = "<h1>Inserindo um texto por InnerHtml</h1>" + document.body.innerHTML);
+console.log(document.body.innerHTML = "<h1>Inserindo um texto por InnerHtml</h1>" + document.body.innerHTML); // Uso duas vezes o InnerHTML para puxar os dados antigos também
+
+
+
+
+
+
+// Acessando elementos HTML com JS
+console.log("=== Usando getElementById / getElementsByClassName ===");
+let paragrafos = document.getElementsByClassName("paragrafo")
+console.log(paragrafos);
+
+let paragrafosId = document.getElementById("p1")
+console.log(paragrafosId);
