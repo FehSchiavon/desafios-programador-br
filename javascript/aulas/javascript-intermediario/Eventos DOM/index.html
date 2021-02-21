@@ -4,10 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Eventos do DOM</title>
+
+        <script>
+            function changeH1() {
+                let input = document.getElementById('texto')
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.innerText = input.value;
+            }
+        </script>
     </head>
     <body>
-        <h1 onclick="console.log('H1 foi clicado')" >Clique em mim</h1>
+        <h1 onclick="this.style.color = 'red'" >Clique em mim</h1>
+        <h1>Usando onchange</h1>
         
+        <input id="texto" type="text" onchange="changeH1()">
+
         <script src="./scripts.js"></script>
     </body>
 </html>
