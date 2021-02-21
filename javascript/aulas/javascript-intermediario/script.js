@@ -55,3 +55,15 @@ p.setAttribute("meuAtt", "Outro atributo") // O SET ele já altera o atributo
 console.log(p);
 p.setAttribute("novoAtt", "Qualquer coisa") // O SET também cria novos atributos
 console.log(p);
+
+
+
+
+
+
+
+
+
+
+// Eventos - DOM
+console.log("=== Eventos DOM ===");
