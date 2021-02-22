@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos do DOM</title>
+
+        <script>
+            function changeH1() {
+                let input = document.getElementById('texto')
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.innerText = input.value;
+            }
+
+            function changeH1This(input) {
+                let h1 = document.getElementsByTagName('h1')[1]
+                h1.innerText = input.value;
+            }
+
+            function onInputThis(input) {
+                let h1 = document.getElementsByTagName('h1')[2]
+                h1.innerText = input.value;
+            }
+
+            function hideH1() {
+                let h1 = document.getElementsByTagName('h1')[2]
+                h1.style.display = "none";
+            }
+        </script>
+
+
+        <style>
+            div {
+                display: inline-block;
+                padding: 20px;
+                font-size: 2rem;
+                background-color: cornflowerblue;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 onclick="this.style.color = 'red'" >Clique em mim</h1>
+        <input id="texto" type="text" onchange="changeH1()">
+
+
+        <h1 onclick="" >Usando onchange com this</h1>
+        <input type="text" onchange="changeH1This(this)">
+
+        <h1>Usando oninput e this</h1>
+        <input type="text" oninput="onInputThis(this)">
+        
+        <br><br><br>
+        <div onclick="hideH1()" >Clique aqui!</div>
+        
+
+        <script src="./scripts.js"></script>
+    </body>
+</html>
