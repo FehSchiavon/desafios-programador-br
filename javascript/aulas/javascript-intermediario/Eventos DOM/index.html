@@ -26,6 +26,10 @@
                 let h1 = document.getElementsByTagName('h1')[2]
                 h1.style.display = "none";
             }
+
+            function onOver(elemento) {
+                elemento.style.backgroundColor = 'red';
+            }
         </script>
 
 
@@ -52,7 +56,12 @@
         
         <br><br><br>
         <div onclick="hideH1()" >Clique aqui!</div>
+
+        <br><br><br>
+        <div onload="console.log('Espera carregar a página para aparecer')"></div>
         
+        <br><br><br>
+        <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
 
         <script src="./scripts.js"></script>
     </body>
