@@ -6,26 +6,47 @@
         <title>Eventos do DOM</title>
 
         <script>
-            function changeH1() {
-                let input = document.getElementById('texto')
-                let h1 = document.getElementsByTagName('h1')[0]
-                h1.innerText = input.value;
+            // Funcao que deixa colocar o Javascrip no todo com OnLoad
+
+            function loaded() {
+            
+                function changeH1() {
+                    let input = document.getElementById('texto')
+                    let h1 = document.getElementsByTagName('h1')[0]
+                    h1.innerText = input.value;
+                }
+
+                function changeH1This(input) {
+                    let h1 = document.getElementsByTagName('h1')[1]
+                    h1.innerText = input.value;
+                }
+
+                function onInputThis(input) {
+                    let h1 = document.getElementsByTagName('h1')[2]
+                    h1.innerText = input.value;
+                }
+
+                function hideH1() {
+                    let h1 = document.getElementsByTagName('h1')[2]
+                    h1.style.display = "none";
+                }
+
+                function onOver(elemento) {
+                    elemento.style.backgroundColor = 'red';
+                }
+
+                function onOut(elemento) {
+                    elemento.style.backgroundColor = 'cornflowerblue';
+                }
+
+                let t = document.getElementById('tituloAddEventsListener')
+                t.addEventListener('click', mudarText)
             }
 
-            function changeH1This(input) {
-                let h1 = document.getElementsByTagName('h1')[1]
-                h1.innerText = input.value;
+            function mudarText() {
+                this.innerHTML = 'Novo Texto';
             }
 
-            function onInputThis(input) {
-                let h1 = document.getElementsByTagName('h1')[2]
-                h1.innerText = input.value;
-            }
-
-            function hideH1() {
-                let h1 = document.getElementsByTagName('h1')[2]
-                h1.style.display = "none";
-            }
         </script>
 
 
@@ -39,7 +60,8 @@
             }
         </style>
     </head>
-    <body>
+
+    <body onload="loaded()">
         <h1 onclick="this.style.color = 'red'" >Clique em mim</h1>
         <input id="texto" type="text" onchange="changeH1()">
 
@@ -52,7 +74,15 @@
         
         <br><br><br>
         <div onclick="hideH1()" >Clique aqui!</div>
+
+        <br><br><br>
+        <div onload="console.log('Espera carregar a página para aparecer')"></div>
         
+        <br><br><br>
+        <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
+
+        <br><br><br>
+        <h1 id="tituloAddEventsListener">texto</h1>
 
         <script src="./scripts.js"></script>
     </body>
