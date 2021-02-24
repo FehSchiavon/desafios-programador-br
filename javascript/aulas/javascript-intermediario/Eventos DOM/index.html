@@ -41,10 +41,15 @@
 
                 let t = document.getElementById('tituloAddEventsListener')
                 t.addEventListener('mouseover', mudarText)
+                t.addEventListener('mouseout', mouseout)
             }
 
             function mudarText() {
                 this.innerHTML = 'Novo Texto';
+            }
+
+            function mouseout() {
+                this.innerHTML = 'Mouse fora do elemento';
             }
 
         </script>
