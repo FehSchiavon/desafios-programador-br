@@ -7,14 +7,17 @@
 
         <script>
 
-            function f() {
+            function f(e) {
                 console.log("Teste")
                 console.log(this)
+                console.log(e)
             }
 
-            function f1() {
+            function f1(e) {
                 console.log("Teste F1")
                 console.log(this)
+                console.log(e)
+                console.log(e.target)
             }
 
             window.onload =  function () {
