@@ -13,11 +13,44 @@
             // window.onload permite usar JS aqui no topo da pagina
             window.onload = function () {
                 
+                // Usando children (Pega os Filhos do elemento e cria um array)
+                console.log("=== Filhos do Elemento ===")
                 let d1 = document.getElementById("d1")
                 console.log(d1)
                 console.log(d1.children[0])
+
+                // Usando parentElement (Paga o Pai destes elementos)
+                console.log("=== Pai do Elemento")
                 let h1 = d1.children[0]
                 console.log(h1)
+                console.log(h1.parentElement)
+
+                // Children pode ser usado mais de uma vez
+                console.log("=== Pode usar children mais vezes ===")
+                console.log(document.body.children[0])
+                console.log(document.body.children[0].children[0])
+
+
+
+                
+
+                // Criando uma function que descobre: Quem é o Pai? #QOP
+                console.log("=== Quem é o Pai? ===")
+                let allH1 = document.getElementsByTagName('h1')
+
+                console.log("=== Ouvindo todos H1 ===")
+                for (let h of allH1) {
+                    console.log(h)
+
+                    h.addEventListener('click', qop)
+                }
+
+                function qop (element) {
+                    console.log("=== Descobrindo o Pai do elemento Clicado ===")
+                    let t = element.target
+                    console.log(t.parentElement)
+                }
+
             }
         </script>
 
