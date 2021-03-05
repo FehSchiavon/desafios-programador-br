@@ -10,7 +10,7 @@
                 background-color: #9FA3AF;
             }
 
-            main {
+            header {
                 margin: auto;
                 text-align: center;
                 width: 70%;
@@ -19,7 +19,7 @@
                 border-radius: 30px;
             }
 
-            main input {
+            header input {
                 margin-top: 20px;
                 width: 70%;
                 border-radius: 30px;
@@ -27,7 +27,7 @@
                 border-style: none;
             }
 
-            main button {
+            header button {
                 padding: 10px 15px;
                 border-radius: 30px;
                 border-style: none;
@@ -35,25 +35,49 @@
 
             }
 
-            main button #plus {
+            header #plus {
                 background-color: #2ECC71;
                 color: #fff;
             }
 
-            main button #less {
+            header #less {
                 background-color: #E74C3C;
+                color: #fff;
             }
 
         </style>
+
+        <script>
+            // Array dos Dados
+            const dataTask = []
+
+            // Seleção dos elementos
+            const newItemList = document.getElementsByTagName("ul")
+            const inputTask = document.getElementById('newTask')
+            const buttonPlus = document.getElementById('plus')
+            const buttonLess = document.getElementById('less')
+
+            // Clicando no botão mais
+            buttonPlus.onclick = addTask;
+
+            // Adicionando uma Tarefa
+            function addTask() {
+                const textTask = inputTask.value;
+                console.log(textTask)
+            }
+
+
+
+        </script>
     </head>
     <body>
         <header>
-            <h1></h1>
+            <input type="text" name="" id="newTask" placeholder="Escreva sua próxima tarefa">
+            <button type="submit" name="add" id="plus">+</button>
+            <button id="less">-</button>
         </header>
         <main>
-            <input type="text" name="" id="" placeholder="Escreva sua próxima tarefa">
-            <button id="plus">+</button>
-            <button id="less">-</button>
+            <ul></ul>
         </main>
         <footer></footer>
     </body>
