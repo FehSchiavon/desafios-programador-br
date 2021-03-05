@@ -48,13 +48,23 @@
         </style>
 
         <script>
+            // Array dos Dados
+            const dataTask = []
 
+            // Seleção dos elementos
             const newItemList = document.getElementsByTagName("ul")
             const inputTask = document.getElementById('newTask')
             const buttonPlus = document.getElementById('plus')
             const buttonLess = document.getElementById('less')
 
+            // Clicando no botão mais
+            buttonPlus.onclick = addTask;
 
+            // Adicionando uma Tarefa
+            function addTask() {
+                const textTask = inputTask.value;
+                console.log(textTask)
+            }
 
 
 
@@ -63,7 +73,7 @@
     <body>
         <header>
             <input type="text" name="" id="newTask" placeholder="Escreva sua próxima tarefa">
-            <button id="plus">+</button>
+            <button type="submit" name="add" id="plus">+</button>
             <button id="less">-</button>
         </header>
         <main>
