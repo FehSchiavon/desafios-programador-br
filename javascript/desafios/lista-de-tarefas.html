@@ -68,6 +68,30 @@
 
 
 
+            // Editar funcionalidades
+            function addTarefa(){
+                const textoTarefaAdd = elementoInput.value;
+
+                tarefasArray.push(textoTarefaAdd)
+
+                elementoInput.value = "";
+                mostraTarefas()
+                salvarNoLocalStorage()
+            }
+
+            function deletaTarefa(pos){
+                tarefasArray.splice(pos, 1)
+                mostraTarefas()
+                salvarNoLocalStorage()
+            }
+
+            function salvarNoLocalStorage(){
+                localStorage.setItem('list_tarefas', JSON.stringify(tarefasArray))
+            }
+
+
+
+
         </script>
     </head>
     <body>
