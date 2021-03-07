@@ -48,6 +48,7 @@
         </style>
 
         <script>
+            /*
             // Array dos Dados
             const dataTask = []
 
@@ -65,10 +66,43 @@
                 const textTask = inputTask.value;
                 console.log(textTask)
             }
+            */
 
 
+            // Editar funcionalidade de código de outros usarios
 
-            // Editar funcionalidades
+            const elementoLista = document.querySelector("ul") //ul
+            const elementoInput = document.getElementById("newTask"); //input
+            const elementoBotao  = document.getElementById("plus"); //bottun
+
+            function mostraTarefas(){
+
+                elementoLista.innerHTML = ""
+
+                for (tarefa of tarefasArray){
+                const elementoTarefa = document.createElement("li");
+                const textoTarefa = document.createTextNode(tarefa)
+
+                //criar botao de apagar tarefa
+                const elementolink = document.createElement("a")
+                    
+                //botao Criar botao
+                const linkText = document.createTextNode("delete");
+                elementolink.appendChild(linkText)  
+                //elementolink.setAttribute("href","#")
+
+                const pos = tarefasArray.indexOf(tarefa)
+                elementolink.setAttribute("onclick", `deletaTarefa(${pos})`)
+
+                elementoTarefa.appendChild(textoTarefa)
+                elementoLista.appendChild(elementoTarefa)
+                elementoTarefa.appendChild(elementolink)
+                }
+            }
+
+            mostraTarefas()
+
+
             function addTarefa(){
                 const textoTarefaAdd = elementoInput.value;
 
