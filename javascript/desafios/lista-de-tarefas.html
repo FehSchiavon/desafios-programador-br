@@ -75,13 +75,13 @@
             
             // Create a new list item when clicking on the "Add" button
             function addTask() {
-            var li = document.createElement("li");
-            var inputValue = document.getElementById("myInput").value;
+            const li = document.createElement("li");
+            const inputValue = document.getElementById("newTaskInput").value;
             var t = document.createTextNode(inputValue);
             li.appendChild(t);
-            
+
             if (inputValue === '') {
-                alert("You must write something!");
+                alert("Você ainda não preencheu a tafera!");
             } else {
                 document.getElementById("myUL").appendChild(li);
             }
@@ -106,7 +106,7 @@
     </head>
     <body>
         <header>
-            <input type="text" name="" id="newTask" placeholder="Escreva sua próxima tarefa">
+            <input type="text" name="" id="newTaskInput" placeholder="Escreva sua próxima tarefa">
             <button id="plus" onclick="addTask()">+</button>
             <button id="less">-</button>
         </header>
