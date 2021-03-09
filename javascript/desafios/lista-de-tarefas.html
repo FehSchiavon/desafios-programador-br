@@ -53,7 +53,7 @@
             const dataTask = []
 
             // Seleção dos elementos
-            const newItemList = document.getElementsByTagName("ul")
+            const newItemList = document.getElementById("ul")
             const inputTask = document.getElementById('newTask')
             const buttonPlus = document.getElementById('plus')
             const buttonLess = document.getElementById('less')
@@ -72,11 +72,34 @@
             } 
 
             // Adicionando uma Tarefa
-            function addTask() {
-                const textTask = inputTask.value;
-                console.log(textTask)
-            }
             
+            // Create a new list item when clicking on the "Add" button
+            function addTask() {
+            var li = document.createElement("li");
+            var inputValue = document.getElementById("myInput").value;
+            var t = document.createTextNode(inputValue);
+            li.appendChild(t);
+            
+            if (inputValue === '') {
+                alert("You must write something!");
+            } else {
+                document.getElementById("myUL").appendChild(li);
+            }
+            document.getElementById("myInput").value = "";
+
+            var span = document.createElement("SPAN");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            li.appendChild(span);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+                }
+            }
+            }
 
 
         </script>
@@ -84,11 +107,13 @@
     <body>
         <header>
             <input type="text" name="" id="newTask" placeholder="Escreva sua próxima tarefa">
-            <button type="submit" name="add" id="plus">+</button>
+            <button id="plus" onclick="addTask()">+</button>
             <button id="less">-</button>
         </header>
         <main>
-            <ul>Alguma coisa</ul>
+            <ul id="myTask">
+                <li>Teste</li>
+            </ul>
         </main>
         <footer></footer>
     </body>
