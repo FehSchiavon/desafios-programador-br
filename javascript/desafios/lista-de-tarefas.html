@@ -48,17 +48,8 @@
         </style>
 
         <script>
-            
-            // Array dos Dados
-            const dataTask = []
 
-            // Seleção dos elementos
-            const newItemList = document.getElementById("ul")
-            const inputTask = document.getElementById('newTask')
-            const buttonPlus = document.getElementById('plus')
-            const buttonLess = document.getElementById('less')
 
-            // Clicando no botão mais
 
             // Array com as tarefas
             let allTask = [
@@ -70,35 +61,35 @@
             for (itemList of allTask) {
                 console.log(itemList)
             } 
-
-            // Adicionando uma Tarefa
             
-            // Create a new list item when clicking on the "Add" button
+            // Criando estrutura para Adicionar Tarefas
             function addTask() {
-            const li = document.createElement("li");
-            const inputValue = document.getElementById("newTaskInput").value;
-            const text = document.createTextNode(inputValue);
-            li.appendChild(text);
 
-            if (inputValue === '') {
-                alert("Você ainda não preencheu a tafera!");
-            } else {
-                document.getElementById("myTask").appendChild(li);
-            }
-            document.getElementById("newTaskInput").value = "";
+                const li = document.createElement("li");
+                const inputValue = document.getElementById("newTaskInput").value;
+                const text = document.createTextNode(inputValue);
+                li.appendChild(text);
 
-            var span = document.createElement("SPAN");
-            var txt = document.createTextNode("\u00D7");
-            span.className = "close";
-            span.appendChild(txt);
-            li.appendChild(span);
-
-            for (i = 0; i < close.length; i++) {
-                close[i].onclick = function() {
-                var div = this.parentElement;
-                div.style.display = "none";
+                // Validando campos se estao preenchidos antes de aplicar
+                if (inputValue === '') {
+                    alert("Você ainda não preencheu a tafera!");
+                } else {
+                    document.getElementById("myTask").appendChild(li);
                 }
-            }
+                document.getElementById("newTaskInput").value = "";
+
+                var span = document.createElement("SPAN");
+                var txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                li.appendChild(span);
+
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                    }
+                }
             }
 
 
