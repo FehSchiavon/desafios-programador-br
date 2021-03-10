@@ -48,39 +48,94 @@
         </style>
 
         <script>
-            
-            // Array dos Dados
-            const dataTask = []
 
-            // Seleção dos elementos
-            const newItemList = document.getElementsByTagName("ul")
-            const inputTask = document.getElementById('newTask')
-            const buttonPlus = document.getElementById('plus')
-            const buttonLess = document.getElementById('less')
-
-            // Clicando no botão mais
-            // buttonPlus.onclick = addTask;
-            
-
-
-            // Adicionando uma Tarefa
+            // Criando estrutura para Adicionar Tarefas
             function addTask() {
-                const textTask = inputTask.value;
-                console.log(textTask)
-            }
-            
+                // Selecionando Inputs no JS
+                const li = document.createElement("li");
+                const inputValue = document.getElementById("newTaskInput").value;
+                const text = document.createTextNode(inputValue);
+                li.appendChild(text);
 
+                // Validando campos se estao preenchidos antes de aplicar
+                if (inputValue === '') {
+                    alert("Você ainda não preencheu a tafera!");
+                } else {
+                    document.getElementById("myTask").appendChild(li);
+                }
+                document.getElementById("newTaskInput").value = "";
+
+                // Botão para Excluir tarefa já adicionada
+                var span = document.createElement("SPAN");
+                var txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                li.appendChild(span);
+
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                    }
+                }
+            }
+
+            // Create a "close" button and append it to each list item
+            var myNodelist = document.getElementsByTagName("LI");
+            var i;
+            for (i = 0; i < myNodelist.length; i++) {
+                var span = document.createElement("SPAN");
+                var txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                myNodelist[i].appendChild(span);
+            }
+
+            // Click on a close button to hide the current list item
+            var close = document.getElementsByClassName("close");
+            var i;
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+
+            // Add a "checked" symbol when clicking on a list item
+            var list = document.querySelector('ul');
+            list.addEventListener('click', function(ev) {
+                if (ev.target.tagName === 'LI') {
+                    ev.target.classList.toggle('checked');
+                }
+            }, false);
+
+
+            // Anterior
+           /*
+           // Array com as tarefas
+            let allTask = [
+                {newTask: "Felipe será que vai entrar na comunidade Sobral?"},
+                {newTask: "Tentato criar uma sistema de Task dinamico"}
+            ]
+
+            // Consumindo os dados do Array
+            for (itemList of allTask) {
+                console.log(itemList)
+            } 
+            */
 
         </script>
     </head>
     <body>
         <header>
-            <input type="text" name="" id="newTask" placeholder="Escreva sua próxima tarefa">
-            <button type="submit" name="add" id="plus">+</button>
+            <input type="text" name="" id="newTaskInput" placeholder="Escreva sua próxima tarefa">
+            <button id="plus" onclick="addTask()">+</button>
             <button id="less">-</button>
         </header>
         <main>
-            <ul></ul>
+            <ul id="myTask">
+                <li>Teste</li>
+            </ul>
         </main>
         <footer></footer>
     </body>
