@@ -77,8 +77,8 @@
             function addTask() {
             const li = document.createElement("li");
             const inputValue = document.getElementById("newTaskInput").value;
-            var t = document.createTextNode(inputValue);
-            li.appendChild(t);
+            const text = document.createTextNode(inputValue);
+            li.appendChild(text);
 
             if (inputValue === '') {
                 alert("Você ainda não preencheu a tafera!");
