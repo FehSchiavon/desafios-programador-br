@@ -10,7 +10,7 @@
                 background-color: #9FA3AF;
             }
 
-            header {
+            main {
                 margin: auto;
                 text-align: center;
                 width: 70%;
@@ -19,7 +19,7 @@
                 border-radius: 30px;
             }
 
-            header input {
+            main input {
                 margin-top: 20px;
                 width: 70%;
                 border-radius: 30px;
@@ -27,7 +27,7 @@
                 border-style: none;
             }
 
-            header button {
+            main button {
                 padding: 10px 15px;
                 border-radius: 30px;
                 border-style: none;
@@ -35,14 +35,22 @@
 
             }
 
-            header #plus {
+            main #plus {
                 background-color: #2ECC71;
                 color: #fff;
             }
 
-            header #less {
+            main #less {
                 background-color: #E74C3C;
                 color: #fff;
+            }
+
+            main ul {
+
+            }
+
+            main ul li {
+                
             }
 
         </style>
@@ -127,12 +135,10 @@
         </script>
     </head>
     <body>
-        <header>
+        <main>
             <input type="text" name="" id="newTaskInput" placeholder="Escreva sua próxima tarefa">
             <button id="plus" onclick="addTask()">+</button>
             <button id="less">-</button>
-        </header>
-        <main>
             <ul id="myTask">
                 <li>Teste</li>
             </ul>
