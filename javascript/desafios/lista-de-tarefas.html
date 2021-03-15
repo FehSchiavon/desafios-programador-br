@@ -153,28 +153,17 @@
                 }
             }
 
-            // Add a "checked" symbol when clicking on a list item
-            var list = document.getElementById('myTask');
-
-            list.addEventListener('click', function(ev) {
-                if (ev.target.tagName === 'LI') {
-                    ev.target.classList.toggle('checked');
+            // Adiciona uma class "checked" quando clicado na lista de itens
+            // Porém não esta dando certo pelo JavaScript
+            /*
+            var list = document.getElementsByTagName("LI");
+            list.addEventListener('click', function(event) {
+                console.log("OKK")
+                console.log(event)
+                if (event.target.tagName === 'LI') {
+                    event.target.classList.toggle('checked');
                 }
-            }, false);
-
-
-            // Anterior
-           /*
-           // Array com as tarefas
-            let allTask = [
-                {newTask: "Felipe será que vai entrar na comunidade Sobral?"},
-                {newTask: "Tentato criar uma sistema de Task dinamico"}
-            ]
-
-            // Consumindo os dados do Array
-            for (itemList of allTask) {
-                console.log(itemList)
-            } 
+            });
             */
 
         </script>
@@ -185,8 +174,7 @@
             <button id="plus" onclick="addTask()">+</button>
             <button id="less">-</button>
             <ul id="myTask">
-                <li>Teste</li>
-                <li class="checked">Teste 02</li>
+
             </ul>
         </main>
         <footer></footer>
