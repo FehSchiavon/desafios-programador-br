@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sorteador de Numeros</title>
+
+        <script>
+            // Sorteio de Pessoas
+            let pessoas = ["Igor", "Jose", "Marcos", "Pamela", "Jonatham"]
+
+            function sortear() {
+                let np = pessoas.length
+
+                let ns = Math.floor(Math.random() * np)
+
+                document.getElementById('display').innerHTML = pessoas[ns]
+            }
+
+
+            // Sorteio de Numeros
+            function sortearNumeros() {
+                let np = 100
+
+                let ns = Math.round(Math.random() * np)
+
+                document.getElementById('display').innerHTML = ns
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1 id="display"></h1>
+        <button onclick="sortear()">Sortear</button>
+    </body>
+</html>
