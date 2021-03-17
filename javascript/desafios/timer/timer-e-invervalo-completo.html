@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer</title>
+        <script>
+
+            let numero = 0;
+
+            function atulizarTexto() {
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.innerHTML += "" + numero
+                numero++
+            }
+
+            function iniciar() {
+                setInterval(atulizarTexto, 3000)
+            }
+
+            function parar() {
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Titulo</h1>
+        <input onclick="mudarTexto()" type="submit" value="Iniciar">
+        <input onclick="mudarTexto()" type="submit" value="Parar">
+    </body>
+</html>

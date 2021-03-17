@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer</title>
+        <script>
+
+            let numero = 0;
+
+            function atulizarTexto() {
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.innerHTML += "" + numero
+                numero++
+            }
+
+            function mudarCor() {
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.style.color = "blue"
+            }
+
+            function mudarTexto() {
+                // Mudar texto somente
+                //let h1 = document.getElementsByTagName('h1')[0]
+                // h1.innerHTML = "Novo Titulo"
+
+                // window.setTimeout(nomeDaFunction, tempoParaExecucao)
+                //setTimeout(mudarCor, 1000)
+
+                // window.setInterval
+                setInterval(atulizarTexto, 3000)
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Titulo</h1>
+        <input onclick="mudarTexto()" type="submit" value="Iniciar">
+        <input onclick="mudarTexto()" type="submit" value="Parar">
+    </body>
+</html>
