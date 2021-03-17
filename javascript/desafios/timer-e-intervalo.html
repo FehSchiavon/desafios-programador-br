@@ -5,9 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Timer</title>
         <script>
+            function mudarCor() {
+                let h1 = document.getElementsByTagName('h1')[0]
+                h1.style.color = "blue"
+            }
+
+
             function mudarTexto() {
-                let h1 = document.getElementByTagName('h1')[0]
+                let h1 = document.getElementsByTagName('h1')[0]
                 h1.innerHTML = "Novo Titulo"
+
+                // window.setTimeout(nomeDaFunction, tempoParaExecucao)
+                setTimeout(mudarCor, 1000)
             }
         </script>
     </head>
