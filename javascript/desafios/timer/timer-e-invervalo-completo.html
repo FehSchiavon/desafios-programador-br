@@ -32,28 +32,28 @@
             let timer;
 
             function atulizarTexto() {
-                let h1 = document.getElementsByTagName('h1')[1]
-                h1.innerHTML += " " + numero
-                numero++
+                let h1Timer = document.getElementsByTagName('h1')[1]
+                h1Timer.innerHTML += " " + numeroTimeout
+                numeroTimeout++
             }
 
             function iniciarTimeout() {
-                interval = setTimeout(atulizarTexto, 1000)
+                timer = setTimeout(atulizarTexto, 1000)
             }
 
             function pararTimeout() {
-                clearTimeout(interval)
+                clearTimeout(timer)
             }
 
 
         </script>
     </head>
     <body>
-        <h1>Titulo Interval</h1>
+        <h1 id="interval">Titulo Interval</h1>
         <input onclick="iniciar()" type="submit" value="Iniciar">
         <input onclick="parar()" type="submit" value="Parar">
 
-        <h1>Titulo Timeout</h1>
+        <h1 id="timerOut">Titulo Timeout</h1>
         <input onclick="iniciarTimeout()" type="submit" value="Iniciar">
         <input onclick="pararTimeout()" type="submit" value="Parar">
     </body>
