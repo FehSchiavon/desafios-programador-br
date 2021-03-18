@@ -24,6 +24,28 @@
                 clearInterval(interval)
             }
 
+
+            // Criando um Timer com set e clear Timeout
+            // Diferença é que o Timeout só executa uma vez e pode ser cancelado antes de terminar
+            let numeroTimeout = 0;
+
+            let timer;
+
+            function atulizarTexto() {
+                let h1 = document.getElementsByTagName('h1')[1]
+                h1.innerHTML += " " + numero
+                numero++
+            }
+
+            function iniciarTimeout() {
+                interval = setTimeout(atulizarTexto, 1000)
+            }
+
+            function pararTimeout() {
+                clearTimeout(interval)
+            }
+
+
         </script>
     </head>
     <body>
