@@ -5,28 +5,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Timer</title>
         <script>
-
+            // Contador com set ou clear Interval
             let numero = 0;
+
+            let interval;
 
             function atulizarTexto() {
                 let h1 = document.getElementsByTagName('h1')[0]
-                h1.innerHTML += "" + numero
+                h1.innerHTML += " " + numero
                 numero++
             }
 
             function iniciar() {
-                setInterval(atulizarTexto, 3000)
+                interval = setInterval(atulizarTexto, 3000)
             }
 
             function parar() {
-
+                clearInterval(interval)
             }
+
+
+            // Criando um Timer com set e clear Timeout
+            // Diferença é que o Timeout só executa uma vez e pode ser cancelado antes de terminar
+            let numeroTimeout = 0;
+
+            let timer;
+
+            function atulizarTexto() {
+                let h1Timer = document.getElementsByTagName('h1')[1]
+                h1Timer.innerHTML += " " + numeroTimeout
+                numeroTimeout++
+            }
+
+            function iniciarTimeout() {
+                timer = setTimeout(atulizarTexto, 1000)
+            }
+
+            function pararTimeout() {
+                clearTimeout(timer)
+            }
+
 
         </script>
     </head>
     <body>
-        <h1>Titulo</h1>
-        <input onclick="mudarTexto()" type="submit" value="Iniciar">
-        <input onclick="mudarTexto()" type="submit" value="Parar">
+        <h1 id="interval">Titulo Interval</h1>
+        <input onclick="iniciar()" type="submit" value="Iniciar">
+        <input onclick="parar()" type="submit" value="Parar">
+
+        <h1 id="timerOut">Titulo Timeout</h1>
+        <input onclick="iniciarTimeout()" type="submit" value="Iniciar">
+        <input onclick="pararTimeout()" type="submit" value="Parar">
     </body>
 </html>
