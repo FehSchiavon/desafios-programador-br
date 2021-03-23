@@ -15,3 +15,4 @@
 
 // Crianças comemem metade disso (x0,5)
 
+console.log("JS")
