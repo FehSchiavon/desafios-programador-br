@@ -12,3 +12,10 @@
     border-radius: 10px;
 }
 
+input {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
