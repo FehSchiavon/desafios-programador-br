@@ -15,4 +15,28 @@
 
 // Crianças comemem metade disso (x0,5)
 
-console.log("JS")
+let inputAdultos = document.getElementById('adultos')
+let inputCriancas = document.getElementById('criancas')
+let inputDuracao = document.getElementById('duracao')
+
+let resultado = document.getElementById('resultado')
+
+function calcular () {
+    console.log("Calcular")
+
+    let adultos = inputAdultos.value
+    let criancas = inputCriancas.value
+    let duracao = inputDuracao.value
+
+    let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) /2 * criancas)
+    console.log(qdtTotalCarne);
+}
+
+function carnePP (duracao) {
+    let carne = 400;
+    if (duracao >= 6) {
+        return 650
+    } else {
+        return 400
+    }
+}
