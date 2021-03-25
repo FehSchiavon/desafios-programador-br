@@ -19,3 +19,7 @@ input {
     box-sizing: border-box;
     margin-bottom: 10px;
 }
+
+#resultado {
+    margin-top: 10px;
+}
