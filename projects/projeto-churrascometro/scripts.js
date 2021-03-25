@@ -5,7 +5,7 @@
 // [X] Carne Bovina: 400 Gramas por pessoa + de 6 horas: 650 Gramas 
 // [] Carne de Frango: 300 Gramas por pessoa + de 6 horas: 600 Gramas
 // [X] Cerveja: 1200 Millilitros por pessoa + de 6 horas: 2000 Millilitros
-// Refrigerante/ Água: 1000 Millilitros por pessoa + de 6 horas: 1500 Millilitros
+// [X] Refrigerante/ Água: 1000 Millilitros por pessoa + de 6 horas: 1500 Millilitros
 
 // Mulheres
 // Carne Bovina: 400 Gramas por pessoa + de 6 horas: 650 Gramas
@@ -29,11 +29,12 @@ function calcular () {
     let duracao = inputDuracao.value
 
     let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas)
-    console.log(qdtTotalCarne);
     let qdtTotalCerveja = cervejaPP(duracao) * adultos
     let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas)
 
-
+    resultado.innerHTML = `<p>${qdtTotalCarne}g de Carne</p>`
+    resultado.innerHTML += `<p>${qdtTotalCerveja}ml de Cerveja</p>`
+    resultado.innerHTML += `<p>${qdtTotalBebidas}ml de Bebidas</p>`
 }
 
 function carnePP (duracao) {
