@@ -29,12 +29,14 @@ function calcular () {
     let duracao = inputDuracao.value
 
     let qdtTotalCarne = carnePP(duracao) * adultos + (carnePP(duracao) / 2 * criancas)
-    let qdtTotalCerveja = cervejaPP(duracao) * adultos + (cervejaPP(duracao) / 2 * criancas)
     console.log(qdtTotalCarne);
+    let qdtTotalCerveja = cervejaPP(duracao) * adultos
+    let qdtTotalBebidas = bebidasPP(duracao) * adultos + (bebidasPP(duracao) / 2 * criancas)
+
+
 }
 
 function carnePP (duracao) {
-    let carne = 400;
     if (duracao >= 6) {
         return 650
     } else {
@@ -43,10 +45,17 @@ function carnePP (duracao) {
 }
 
 function cervejaPP (duracao) {
-    let carne = 400;
     if (duracao >= 6) {
         return 2000
     } else {
         return 1200
+    }
+}
+
+function bebidasPP (duracao) {
+    if (duracao >= 6) {
+        return 1500
+    } else {
+        return 1000
     }
 }
