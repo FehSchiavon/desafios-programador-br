@@ -3,11 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
         <title>Criando Lista de Tarefas</title>
 
         <style>
             body {
                 background-color: #9FA3AF;
+            }
+
+            header {
+                margin: auto;
+                text-align: center;
+                width: 70%;
+                background-color: #E2E2E8;
+                border-radius: 30px;
+            }
+
+            header h1 {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
             }
 
             main {
@@ -73,22 +88,22 @@
             }
 
             main ul li.checked {
-            background: #888;
-            color: #fff;
-            text-decoration: line-through;
+                background: #888;
+                color: #fff;
+                text-decoration: line-through;
             }
 
             main ul li.checked::before {
-            content: '';
-            position: absolute;
-            border-color: #fff;
-            border-style: solid;
-            border-width: 0 2px 2px 0;
-            top: 10px;
-            left: 16px;
-            transform: rotate(45deg);
-            height: 15px;
-            width: 7px;
+                content: '';
+                position: absolute;
+                border-color: #fff;
+                border-style: solid;
+                border-width: 0 2px 2px 0;
+                top: 10px;
+                left: 16px;
+                transform: rotate(45deg);
+                height: 15px;
+                width: 7px;
             }
 
             .close {
@@ -176,9 +191,9 @@
         </script>
     </head>
     <body>
-        <head>
+        <header>
             <h1>Tarefas diarias</h1>
-        </head>
+        </header>
 
         <main>
             <input type="text" id="newTaskInput" placeholder="Escreva sua próxima tarefa">
