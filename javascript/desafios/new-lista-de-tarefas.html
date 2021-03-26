@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Criando Lista de Tarefas</title>
+
+        <style>
+            body {
+                background-color: #9FA3AF;
+            }
+
+            main {
+                margin: auto;
+                text-align: center;
+                width: 70%;
+                height: 500px;
+                background-color: #E2E2E8;
+                border-radius: 30px;
+            }
+
+            main input {
+                margin-top: 20px;
+                width: 70%;
+                border-radius: 30px;
+                padding: 10px 20px;
+                border-style: none;
+            }
+
+            main button {
+                padding: 10px 15px;
+                border-radius: 30px;
+                border-style: none;
+                font-weight: bold; 
+
+            }
+
+            main #plus {
+                background-color: #2ECC71;
+                color: #fff;
+            }
+
+            main #less {
+                background-color: #E74C3C;
+                color: #fff;
+            }
+
+            main ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            main #less {
+                margin-bottom: 10px;
+            }
+
+            main ul li {
+                cursor: pointer;
+                position: relative;
+                padding: 12px 8px 12px 40px;
+                list-style-type: none;
+                background: #eee;
+                font-size: 18px;
+                transition: 0.2s;
+            }
+
+            main ul li:nth-child(odd) {
+                background: #f9f9f9;
+            }
+
+            main ul li:hover {
+                background: #ddd;
+            }
+
+            main ul li.checked {
+            background: #888;
+            color: #fff;
+            text-decoration: line-through;
+            }
+
+            main ul li.checked::before {
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+            }
+
+            .close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 12px 16px 12px 16px;
+            }
+
+            .close:hover {
+                background-color: #f44336;
+                color: white;
+            }
+
+        </style>
+
+        <script>
+
+            // Criando estrutura para Adicionar Tarefas
+            function addTask() {
+                // Selecionando Inputs no JS
+                const li = document.createElement("li");
+                const inputValue = document.getElementById("newTaskInput").value;
+                const text = document.createTextNode(inputValue);
+                li.appendChild(text);
+
+                // Validando campos se estao preenchidos antes de aplicar
+                if (inputValue === '') {
+                    alert("Você ainda não preencheu a tafera!");
+                } else {
+                    document.getElementById("myTask").appendChild(li);
+                }
+                document.getElementById("newTaskInput").value = "";
+
+                // Botão para Excluir tarefa já adicionada
+                const span = document.createElement("SPAN");
+                const txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                li.appendChild(span);
+
+                for (i = 0; i < close.length; i++) {
+                    close[i].onclick = function() {
+                    let div = this.parentElement;
+                    div.style.display = "none";
+                    }
+                }
+            }
+
+            // Criar um botão de Close para cada item adicionado na lista
+            let myNodelist = document.getElementsByTagName("LI");
+            for (i = 0; i < myNodelist.length; i++) {
+                let span = document.createElement("SPAN");
+                let txt = document.createTextNode("\u00D7");
+                span.className = "close";
+                span.appendChild(txt);
+                myNodelist[i].appendChild(span);
+            }
+
+            // Fazer com o botão Close feche a tarefa que foi aberta
+            let close = document.getElementsByClassName("close");
+            for (let i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    let div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+
+            // Adiciona uma class "checked" quando clicado na lista de itens
+            // Porém não esta dando certo pelo JavaScript
+
+            /*
+            var list = document.getElementsByTagName("LI");
+            list.addEventListener('click', function(event) {
+                console.log("OKK")
+                console.log(event)
+                if (event.target.tagName === 'LI') {
+                    event.target.classList.toggle('checked');
+                }
+            });
+            */
+
+            // Aplicar Local Storage para utilizar esses dados na memoria 
+
+        </script>
+    </head>
+    <body>
+        <head>
+            <h1>Tarefas diarias</h1>
+        </head>
+
+        <main>
+            <input type="text" id="newTaskInput" placeholder="Escreva sua próxima tarefa">
+            <button id="plus" onclick="addTask()">+</button>
+            <button id="less">-</button>
+            <ul id="myTask">
+
+            </ul>
+        </main>
+        <footer>
+            <p>© produzido por Felipe Schiavon</p>
+        </footer>
+    </body>
+</html>
