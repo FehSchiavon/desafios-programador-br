@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Ubuntu+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+        <section>
+            <div id="menu">
+                <div id="date">
+                </div>
+                <div id="input">
+                    <input type="text" name="task-name" id="task-name" placeholder="adicionar..."
+                        onkeydown="detectaTecla(event)">
+                </div>
+                <div id="add-task">
+                    Add
+                </div>
+            </div>
+            <div id="task-container">
+                <ul id="task-list">
+
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="clear all" onclick="excluirSelecionados()">Deletar</div>
+            <div class="clear" onclick="limparTudo()">Limpar</div>
+            <p style="text-align: center;padding: 10px;">&copy; produzido por Jonathan Engel</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
