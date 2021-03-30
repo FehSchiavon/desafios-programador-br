@@ -11,3 +11,16 @@ image.addEventListener("click", function() {
     // O setAttribute por fazer também, que e criar uma class/id/o que quiser dentro do elemento
     image.setAttribute("cor", "vermelho")
 })
+
+
+//=== === === === === === === === === === === === ===//
+let lista = document.getElementById("lista")
+let num = parseInt(lista.getAttribute("num"))
+
+let conteudo = ""
+
+for (let i = 0; i < num; i++) {
+    conteudo += "<li>" + i + "<li>"
+}
+
+lista.innerHTML = conteudo
