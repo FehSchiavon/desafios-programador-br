@@ -9,5 +9,5 @@ image.addEventListener("click", function() {
     image.setAttribute("src", "./dislike.png")
 
     // O setAttribute por fazer também, que e criar uma class/id/o que quiser dentro do elemento
-    
+    image.setAttribute("cor", "vermelho")
 })
