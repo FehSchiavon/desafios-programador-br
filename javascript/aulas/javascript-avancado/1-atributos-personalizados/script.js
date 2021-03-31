@@ -21,11 +21,24 @@ let num = parseInt(lista.getAttribute("num"))
 let conteudo = ""
 
 for (let i = 0; i < num; i++) {
-    conteudo += "<li>" + i + "<li>"
+    conteudo += "<li>" + i + "</li>"
 }
 
-lista.innerHTML = conteudo
+lista.innerHTML = conteudo;
 //=== === === === === === === === === === === === ===//
 
 //=== === === === === === === === === === === === ===//
-// Atribuitos Personalizados 2 
+// Atribuitos Personalizados 2 - Adicionando [data]-nome para usar [dataset]
+let listaDataSet = document.getElementById("listaDataSet")
+
+// Alterando dados dele pelo JS
+listaDataSet.dataset.n = 4;
+console.log(listaDataSet.dataset.n)
+
+let conteudoDataSet = ""
+
+for (let i = 0; i < num; i++) {
+    conteudoDataSet += "<li>" + i + "</li>"
+}
+
+lista.innerHTML = conteudoDataSet
