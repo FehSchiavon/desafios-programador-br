@@ -27,6 +27,12 @@ for (let i = 0; i < num; i++) {
 lista.innerHTML = conteudo;
 //=== === === === === === === === === === === === ===//
 
+
+
+
+
+
+
 //=== === === === === === === === === === === === ===//
 // Atribuitos Personalizados 2 - Adicionando [data]-nome para usar [dataset]
 let listaDataSet = document.getElementById("listaDataSet")
@@ -35,10 +41,16 @@ let listaDataSet = document.getElementById("listaDataSet")
 listaDataSet.dataset.n = 4;
 console.log(listaDataSet.dataset.n)
 
+// Dado não vem no formato de String
+let id = parseInt(listaDataSet.getAttribute("data-id"))
+console.log(id)
+
+let numDataSet = parseInt(listaDataSet.dataset.n)
+
 let conteudoDataSet = ""
 
-for (let i = 0; i < num; i++) {
+for (let i = 0; i < numDataSet; i++) {
     conteudoDataSet += "<li>" + i + "</li>"
 }
 
-lista.innerHTML = conteudoDataSet
+listaDataSet.innerHTML = conteudoDataSet
