@@ -14,6 +14,7 @@ image.addEventListener("click", function() {
 
 
 //=== === === === === === === === === === === === ===//
+// Atributos Personalizados 1 - Criando Lista pelo JS
 let lista = document.getElementById("lista")
 let num = parseInt(lista.getAttribute("num"))
 
@@ -24,3 +25,7 @@ for (let i = 0; i < num; i++) {
 }
 
 lista.innerHTML = conteudo
+//=== === === === === === === === === === === === ===//
+
+//=== === === === === === === === === === === === ===//
+// Atribuitos Personalizados 2 
