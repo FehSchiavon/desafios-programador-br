@@ -14,13 +14,46 @@ image.addEventListener("click", function() {
 
 
 //=== === === === === === === === === === === === ===//
+// Atributos Personalizados 1 - Criando Lista pelo JS
 let lista = document.getElementById("lista")
 let num = parseInt(lista.getAttribute("num"))
+console.log(num)
 
 let conteudo = ""
 
 for (let i = 0; i < num; i++) {
-    conteudo += "<li>" + i + "<li>"
+    conteudo += "<li>" + i + "</li>"
 }
 
-lista.innerHTML = conteudo
+lista.innerHTML = conteudo;
+//=== === === === === === === === === === === === ===//
+
+
+
+
+
+
+
+//=== === === === === === === === === === === === ===//
+// Atribuitos Personalizados 2 - Adicionando [data]-nome para usar [dataset]
+let listaDataSet = document.getElementById("listaDataSet")
+
+// Alterando dados dele pelo JS
+listaDataSet.dataset.n = 4;
+console.log(listaDataSet.dataset.n)
+
+// Dado não vem no formato de String // E parseInt os Transforma no formato certo para usar
+let naoTranformadoId = listaDataSet.getAttribute("data-id")
+console.log(naoTranformadoId)
+let id = parseInt(listaDataSet.getAttribute("data-id"))
+console.log(id)
+
+let numDataSet = parseInt(listaDataSet.dataset.n)
+
+let conteudoDataSet = ""
+
+for (let i = 0; i < numDataSet; i++) {
+    conteudoDataSet += "<li>" + i + "</li>"
+}
+
+listaDataSet.innerHTML = conteudoDataSet
