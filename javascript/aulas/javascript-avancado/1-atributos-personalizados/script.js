@@ -17,6 +17,7 @@ image.addEventListener("click", function() {
 // Atributos Personalizados 1 - Criando Lista pelo JS
 let lista = document.getElementById("lista")
 let num = parseInt(lista.getAttribute("num"))
+console.log(num)
 
 let conteudo = ""
 
