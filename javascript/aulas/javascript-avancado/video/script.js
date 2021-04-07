@@ -1,5 +1,11 @@
 let video = document.getElementById("video1")
+let selectButton= document.getElementsByClassName("btn")
 
+// Selecionar Botao e Mudar de Seta pa Mão
+selectButton.style.cursor = "pointer"
+
+
+// Funcionalidades dos Botoes
 function retroceder() {
     video.currentTime -= 15
 }
