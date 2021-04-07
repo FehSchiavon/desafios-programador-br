@@ -39,14 +39,14 @@
     </head>
     <body>
         <div class="container">
-            <video src="./porta-paletes.mp4"></video>
+            <video id="video1" src="./porta-paletes.mp4"></video>
             <div class="controle">
-                <img class="btn" src="./rotate-ccw.svg" alt="">
-                <img class="btn" src="./rotate-cw.svg" alt="">
-                <img class="btn" src="./plus-circle.svg" alt="">
-                <img class="btn" src="./minus-circle.svg" alt="">
-                <img class="btn" src="./play-circle.svg" alt="">
-                <img class="btn" src="./stop-circle.svg" alt="">
+                <img class="btn" onclick="retroceder()" src="./rotate-ccw.svg" alt="">
+                <img class="btn" onclick="avancar()" src="./rotate-cw.svg" alt="">
+                <img class="btn" onclick="diminuir_vel()" src="./plus-circle.svg" alt="">
+                <img class="btn" onclick="aumentar_vel()" src="./minus-circle.svg" alt="">
+                <img class="btn" onclick="play()" src="./play-circle.svg" alt="">
+                <img class="btn" onclick="stop()" src="./stop-circle.svg" alt="">
             </div>
         </div>
 
