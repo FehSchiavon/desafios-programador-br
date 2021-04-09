@@ -2,7 +2,12 @@ let video = document.getElementById("video1")
 let selectButton= document.getElementsByClassName("btn")
 
 // Selecionar Botao e Mudar de Seta pa Mão
-selectButton.style.cursor = "pointer"
+selectButton[0].style.cursor = "pointer"
+selectButton[1].style.cursor = "pointer"
+selectButton[2].style.cursor = "pointer"
+selectButton[3].style.cursor = "pointer"
+selectButton[4].style.cursor = "pointer"
+selectButton[5].style.cursor = "pointer"
 
 
 // Funcionalidades dos Botoes
