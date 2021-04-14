@@ -18,6 +18,10 @@
                 border-radius: 30px;
             }
 
+            .player .controls {
+                display: inline-block;
+                text-align: center;
+            }
 
             .player .controls .btn {
                 position: relative;
@@ -25,7 +29,6 @@
                 top: 100%;
                 transform: translateY(-100%);
                 background-color: #DCC9C2;
-
             }
 
         </style>
@@ -34,11 +37,13 @@
         <div class="player">
             <img class="player-img" src="./img/cruz.jpg" alt="cruz-jesus">
 
+            <!--
             <audio id="music" controls>
                 <source src="./deus-e-a-solucao-uiris.ogg" type="audio/ogg">
                 <source src="./deus-e-a-solucao-uiris.mp3" type="audio/mp3">
             </audio>
-
+            -->
+            
             <div class="controls">
                 <img class="btn" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
                 <img class="btn" onclick="avancar()" src="./assets/rotate-cw.svg" alt="">
