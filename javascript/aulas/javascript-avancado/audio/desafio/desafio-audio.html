@@ -19,8 +19,12 @@
             }
 
             .player .controls {
-                display: inline-block;
-                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                background-color: #DCC9C2;
+                
             }
 
             .player .controls .btn {
@@ -28,7 +32,6 @@
                 padding: 10px;
                 top: 100%;
                 transform: translateY(-100%);
-                background-color: #DCC9C2;
             }
 
         </style>
@@ -43,7 +46,7 @@
                 <source src="./deus-e-a-solucao-uiris.mp3" type="audio/mp3">
             </audio>
             -->
-            
+
             <div class="controls">
                 <img class="btn" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
                 <img class="btn" onclick="avancar()" src="./assets/rotate-cw.svg" alt="">
