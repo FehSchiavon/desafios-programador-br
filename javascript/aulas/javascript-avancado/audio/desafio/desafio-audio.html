@@ -29,9 +29,17 @@
 
             .player .controls .btn {
                 position: relative;
-                padding: 10px;
+                padding: 20px;
                 top: 100%;
-                transform: translateY(-100%);
+                transform: translateY(-115%);
+            }
+
+            .player .controls .start {
+                border-top-left-radius: 30px;
+            }
+
+            .player .controls .end {
+                border-top-right-radius: 30px;
             }
 
         </style>
@@ -48,12 +56,12 @@
             -->
 
             <div class="controls">
-                <img class="btn" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
+                <img class="btn start" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
                 <img class="btn" onclick="avancar()" src="./assets/rotate-cw.svg" alt="">
                 <img class="btn" onclick="diminuir_vel()" src="./assets/plus-circle.svg" alt="">
                 <img class="btn" onclick="aumentar_vel()" src="./assets/minus-circle.svg" alt="">
                 <img class="btn" onclick="play()" src="./assets/play-circle.svg" alt="">
-                <img class="btn" onclick="stop()" src="./assets/stop-circle.svg" alt="">
+                <img class="btn end" onclick="stop()" src="./assets/stop-circle.svg" alt="">
             </div>
         </div>
 
