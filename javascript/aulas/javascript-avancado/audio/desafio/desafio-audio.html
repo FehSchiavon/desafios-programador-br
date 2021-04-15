@@ -48,12 +48,9 @@
         <div class="player">
             <img class="player-img" src="./img/cruz.jpg" alt="cruz-jesus">
 
-            <!--
-            <audio id="music" controls>
-                <source src="./deus-e-a-solucao-uiris.ogg" type="audio/ogg">
-                <source src="./deus-e-a-solucao-uiris.mp3" type="audio/mp3">
+            <audio id="music">
+                <source src="./music/deus-e-a-solucao-uiris.mp3" type="audio/mp3">
             </audio>
-            -->
 
             <div class="controls">
                 <img class="btn start" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
@@ -65,6 +62,46 @@
             </div>
         </div>
 
+        <script>
+            let music = document.getElementById("music")
+            console.log(music)
+            let selectButton= document.getElementsByClassName("btn")
 
+            // Selecionar Botao e Mudar de Seta pa Mão
+            selectButton[0].style.cursor = "pointer"
+            selectButton[1].style.cursor = "pointer"
+            selectButton[2].style.cursor = "pointer"
+            selectButton[3].style.cursor = "pointer"
+            selectButton[4].style.cursor = "pointer"
+            selectButton[5].style.cursor = "pointer"
+
+
+            // Funcionalidades dos Botoes
+            function retroceder() {
+                music.currentTime -= 15
+            }
+
+            function avancar() {
+                music.currentTime += 15
+            }
+
+            function diminuir_vel() {
+                music.playbackRate -= 0.1
+            }
+
+            function aumentar_vel() {
+                music.playbackRate += 0.1
+            }
+
+            function play() {
+                music.play()
+            }
+
+            function stop() {
+                music.pause()
+                music.currentTime = 0
+            }
+
+        </script>
     </body>
 </html>
