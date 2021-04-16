@@ -42,6 +42,19 @@
                 border-top-right-radius: 30px;
             }
 
+            .player .controls .back {
+                background-color: #B39A96;
+                border-radius: 30px;
+                margin-right: 15px;
+            }
+
+            .player .controls .next {
+                background-color: #B39A96;
+                border-radius: 30px;
+                margin-left: 15px;
+
+            }
+
         </style>
     </head>
     <body>
@@ -53,14 +66,14 @@
             </audio>
 
             <div class="controls">
-                <img class="btn back" onclick="voltar()" src="./assets/rotate-ccw.svg" alt="">
+                <img class="btn back" onclick="voltar()" src="./assets/chevrons-left.svg" alt="">
                 <img class="btn start" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
                 <img class="btn" onclick="avancar()" src="./assets/rotate-cw.svg" alt="">
                 <img class="btn" onclick="aumentar_vel()" src="./assets/plus-circle.svg" alt="">
                 <img class="btn" onclick="diminuir_vel()" src="./assets/minus-circle.svg" alt="">
                 <img class="btn" onclick="play()" src="./assets/play-circle.svg" alt="">
                 <img class="btn end" onclick="stop()" src="./assets/stop-circle.svg" alt="">
-                <img class="btn next" onclick="proximo()" src="./assets/rotate-ccw.svg" alt="">
+                <img class="btn next" onclick="proximo()" src="./assets/chevrons-right.svg" alt="">
             </div>
         </div>
 
