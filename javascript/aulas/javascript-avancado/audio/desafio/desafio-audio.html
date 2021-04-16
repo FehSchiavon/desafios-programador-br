@@ -18,15 +18,46 @@
                 border-radius: 30px;
             }
 
+            .player .controls {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                background-color: #DCC9C2;
+                
+            }
 
             .player .controls .btn {
                 position: relative;
-                width: 60px;
-                padding: 10px;
+                padding: 20px;
                 top: 100%;
-                transform: translateY(-100%);
+                transform: translateY(-115%);
+                cursor: pointer;
+            }
 
-                filter: invert(1);
+            .player .controls .btn:hover {
+                background-color: #B39A96; 
+            }
+
+            .player .controls .start {
+                border-top-left-radius: 30px;
+            }
+
+            .player .controls .end {
+                border-top-right-radius: 30px;
+            }
+
+            .player .controls .back {
+                background-color: #B39A96;
+                border-radius: 30px;
+                margin-right: 15px;
+            }
+
+            .player .controls .next {
+                background-color: #B39A96;
+                border-radius: 30px;
+                margin-left: 15px;
+
             }
 
         </style>
@@ -35,21 +66,76 @@
         <div class="player">
             <img class="player-img" src="./img/cruz.jpg" alt="cruz-jesus">
 
-            <audio id="music" controls>
-                <source src="./deus-e-a-solucao-uiris.ogg" type="audio/ogg">
-                <source src="./deus-e-a-solucao-uiris.mp3" type="audio/mp3">
+            <audio id="music">
+                <source src="./music/deus-e-a-solucao-uiris.mp3" type="audio/mp3">
             </audio>
 
             <div class="controls">
-                <img class="btn" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
+                <img class="btn back" onclick="voltar()" src="./assets/chevrons-left.svg" alt="">
+                <img class="btn start" onclick="retroceder()" src="./assets/rotate-ccw.svg" alt="">
                 <img class="btn" onclick="avancar()" src="./assets/rotate-cw.svg" alt="">
-                <img class="btn" onclick="diminuir_vel()" src="./assets/plus-circle.svg" alt="">
-                <img class="btn" onclick="aumentar_vel()" src="./assets/minus-circle.svg" alt="">
+                <img class="btn" onclick="aumentar_vel()" src="./assets/plus-circle.svg" alt="">
+                <img class="btn" onclick="diminuir_vel()" src="./assets/minus-circle.svg" alt="">
                 <img class="btn" onclick="play()" src="./assets/play-circle.svg" alt="">
-                <img class="btn" onclick="stop()" src="./assets/stop-circle.svg" alt="">
+                <img class="btn end" onclick="stop()" src="./assets/stop-circle.svg" alt="">
+                <img class="btn next" onclick="proximo()" src="./assets/chevrons-right.svg" alt="">
             </div>
         </div>
 
+        <script>
+            // Listando Hinos / Imagens / 
+            let listMusic = ["./music/deus-e-a-solucao-uiris.mp3", "./music/a-boa-parte-laissa-e-lorrana.mp3", "paz-no-vale-kalebe-e-talita.mp3"]
+            let nameMusic = ["Deus é a Solução - Uiris", "A boa parte - Laissa e Lorrana","Paz no Vale - Kalebe e Talita"]
+            
 
+
+
+            let music = document.getElementById("music")
+            let selectButton= document.getElementsByClassName("btn")
+
+            // Selecionar Botao e Mudar de Seta pa Mão
+            selectButton[0].style.cursor = "pointer"
+            selectButton[1].style.cursor = "pointer"
+            selectButton[2].style.cursor = "pointer"
+            selectButton[3].style.cursor = "pointer"
+            selectButton[4].style.cursor = "pointer"
+            selectButton[5].style.cursor = "pointer"
+
+
+            // Funcionalidades dos Botoes
+            function retroceder() {
+                music.currentTime -= 15
+            }
+
+            function avancar() {
+                music.currentTime += 15
+            }
+
+            function diminuir_vel() {
+                music.playbackRate -= 0.1
+            }
+
+            function aumentar_vel() {
+                music.playbackRate += 0.1
+            }
+
+            function play() {
+                music.play()
+            }
+
+            function stop() {
+                music.pause()
+                music.currentTime = 0
+            }
+
+            function voltar() {
+            
+            }
+
+            function proximo() {
+
+            }
+
+        </script>
     </body>
 </html>
