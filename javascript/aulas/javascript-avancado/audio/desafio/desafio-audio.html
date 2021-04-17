@@ -70,7 +70,7 @@
     <body>
         <div class="player">
             <div class="headLine">
-                <h1 class="titleHeadLine">Titulo do Hino</h1>
+                Titulo
             </div>
 
             <img class="player-img" src="./img/cruz.jpg" alt="cruz-jesus">
@@ -95,11 +95,9 @@
             // Listando Hinos / Imagens / 
             let listMusic = ["./music/deus-e-a-solucao-uiris.mp3", "./music/a-boa-parte-laissa-e-lorrana.mp3", "paz-no-vale-kalebe-e-talita.mp3"]
             let nameMusic = ["Deus é a Solução - Uiris", "A boa parte - Laissa e Lorrana","Paz no Vale - Kalebe e Talita"]
-            let headLine = document.getElementsByClassName("titleHeadLine")
-            console.log(headLine)
-
-            headLine.innerHTML = "Teste"
-
+            let headLine = document.getElementsByClassName("headLine")[0]
+            // Mudana via JavaScript
+            headLine.innerHTML = "Teste 01"
 
 
 
