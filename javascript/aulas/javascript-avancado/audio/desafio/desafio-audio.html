@@ -14,6 +14,11 @@
                 margin-top: 10%;
             }
 
+            .player .headLine {
+                opacity: 0.5;
+                transform: translateY(200%);
+            }
+
             .player .player-img {
                 border-radius: 30px;
             }
@@ -64,11 +69,13 @@
     </head>
     <body>
         <div class="player">
+            <div class="headLine">
+                Deus é a Solução - Uiris
+            </div>
+
             <img class="player-img" src="./img/cruz.jpg" alt="cruz-jesus">
 
-            <audio id="music">
-                <source src="./music/deus-e-a-solucao-uiris.mp3" type="audio/mp3">
-            </audio>
+            <audio id="music" src="./music/deus-e-a-solucao-uiris.mp3" type="audio/mp3"></audio>
 
             <div class="controls">
                 <img class="btn back" onclick="voltar()" src="./assets/chevrons-left.svg" alt="">
@@ -84,22 +91,25 @@
 
         <script>
             // Listando Hinos / Imagens / 
-            let listMusic = ["./music/deus-e-a-solucao-uiris.mp3", "./music/a-boa-parte-laissa-e-lorrana.mp3", "paz-no-vale-kalebe-e-talita.mp3"]
+            let listMusic = ["./music/deus-e-a-solucao-uiris.mp3", "./music/a-boa-parte-laissa-e-lorrana.mp3", "./music/paz-no-vale-kalebe-e-talita.mp3"]
             let nameMusic = ["Deus é a Solução - Uiris", "A boa parte - Laissa e Lorrana","Paz no Vale - Kalebe e Talita"]
-            
+            console.log(listMusic.length)
 
 
-
+            let headLine = document.getElementsByClassName("headLine")[0]
             let music = document.getElementById("music")
             let selectButton= document.getElementsByClassName("btn")
 
-            // Selecionar Botao e Mudar de Seta pa Mão
-            selectButton[0].style.cursor = "pointer"
-            selectButton[1].style.cursor = "pointer"
-            selectButton[2].style.cursor = "pointer"
-            selectButton[3].style.cursor = "pointer"
-            selectButton[4].style.cursor = "pointer"
-            selectButton[5].style.cursor = "pointer"
+            let listMusicIndex = 0
+
+
+            // Sobre escrevendo proximo hino
+            //console.log(music.src)
+            // music.src = "./music/a-boa-parte-laissa-e-lorrana.mp3"
+
+            // Mudando Head Line via JavaScript
+            //headLine.innerHTML = "Teste 01"
+
 
 
             // Funcionalidades dos Botoes
@@ -128,13 +138,25 @@
                 music.currentTime = 0
             }
 
-            function voltar() {
-            
-            }
-
             function proximo() {
 
+                if (listMusicIndex < listMusic.length - 1){
+                    listMusicIndex += 1
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                } 
+
+
+                // music.src = "./music/a-boa-parte-laissa-e-lorrana.mp3"
+                // headLine.innerHTML = "A boa parte - Laissa e Lorrana"
+                
             }
+
+            function voltar() {
+
+            }
+
+
 
         </script>
     </body>
