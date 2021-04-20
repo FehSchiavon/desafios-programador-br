@@ -150,7 +150,13 @@
                     headLine.innerHTML = nameMusic[listMusicIndex]
                 } else {
                     listMusicIndex = listMusic.length
-                    console.log(listMusic.length)
+
+                    if (listMusicIndex = 3) {
+                        listMusicIndex -= 1
+                        music.src = listMusic[listMusicIndex]
+                        headLine.innerHTML = nameMusic[listMusicIndex]
+                    }
+
                 }
             }
 
