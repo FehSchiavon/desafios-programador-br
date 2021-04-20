@@ -93,23 +93,13 @@
             // Listando Hinos / Imagens / 
             let listMusic = ["./music/deus-e-a-solucao-uiris.mp3", "./music/a-boa-parte-laissa-e-lorrana.mp3", "./music/paz-no-vale-kalebe-e-talita.mp3"]
             let nameMusic = ["Deus é a Solução - Uiris", "A boa parte - Laissa e Lorrana","Paz no Vale - Kalebe e Talita"]
-            console.log(listMusic.length)
 
-
+            // Selecionando itens
             let headLine = document.getElementsByClassName("headLine")[0]
             let music = document.getElementById("music")
             let selectButton= document.getElementsByClassName("btn")
 
             let listMusicIndex = 0
-
-
-            // Sobre escrevendo proximo hino
-            //console.log(music.src)
-            // music.src = "./music/a-boa-parte-laissa-e-lorrana.mp3"
-
-            // Mudando Head Line via JavaScript
-            //headLine.innerHTML = "Teste 01"
-
 
 
             // Funcionalidades dos Botoes
@@ -144,16 +134,29 @@
                     listMusicIndex += 1
                     music.src = listMusic[listMusicIndex]
                     headLine.innerHTML = nameMusic[listMusicIndex]
-                } 
+                } else {
+                    listMusicIndex = 0
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                }
 
-
-                // music.src = "./music/a-boa-parte-laissa-e-lorrana.mp3"
-                // headLine.innerHTML = "A boa parte - Laissa e Lorrana"
-                
             }
 
             function voltar() {
+                if (listMusicIndex > 0){
+                    listMusicIndex -= 1
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                } else {
+                    listMusicIndex = listMusic.length
 
+                    if (listMusicIndex = 3) {
+                        listMusicIndex -= 1
+                        music.src = listMusic[listMusicIndex]
+                        headLine.innerHTML = nameMusic[listMusicIndex]
+                    }
+
+                }
             }
 
 
