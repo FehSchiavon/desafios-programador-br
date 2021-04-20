@@ -144,16 +144,24 @@
                     listMusicIndex += 1
                     music.src = listMusic[listMusicIndex]
                     headLine.innerHTML = nameMusic[listMusicIndex]
-                } 
+                } else {
+                    listMusicIndex = 0
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                }
 
-
-                // music.src = "./music/a-boa-parte-laissa-e-lorrana.mp3"
-                // headLine.innerHTML = "A boa parte - Laissa e Lorrana"
-                
             }
 
             function voltar() {
-
+                if (listMusicIndex < listMusic.length - 1){
+                    listMusicIndex += 1
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                } else {
+                    listMusicIndex = 0
+                    music.src = listMusic[listMusicIndex]
+                    headLine.innerHTML = nameMusic[listMusicIndex]
+                }
             }
 
 
