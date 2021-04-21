@@ -15,6 +15,7 @@
             }
 
             .player .headLine {
+                font-size: 30px;
                 opacity: 0.5;
                 transform: translateY(200%);
             }
@@ -150,12 +151,11 @@
                 } else {
                     listMusicIndex = listMusic.length
 
-                    if (listMusicIndex = 3) {
+                    if (listMusicIndex = listMusic.length) {
                         listMusicIndex -= 1
                         music.src = listMusic[listMusicIndex]
                         headLine.innerHTML = nameMusic[listMusicIndex]
                     }
-
                 }
             }
 
