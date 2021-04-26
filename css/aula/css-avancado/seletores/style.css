@@ -1,0 +1,8 @@
+/* Quando você usa > indica que tem que ser o elemento PAI dele */
+
+#head > p {
+    background-color: green;
+}
+
+
+
