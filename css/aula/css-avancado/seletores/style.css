@@ -5,4 +5,18 @@
 }
 
 
+/* Ele pega TODOS os elesmentos apos a TAG */
+#head ~ p {
+    background-color: tomato;
+}
 
+
+/* Ele pega o proximo elementos depois da TAG usada apenas UM*/
+#elemento + p {
+    background-color: blue;
+}
+
+
+[width] {
+    
+}
