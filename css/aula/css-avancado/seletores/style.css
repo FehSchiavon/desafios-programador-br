@@ -16,7 +16,32 @@
     background-color: blue;
 }
 
-
+/* Seleciona o ter tem dentro do HTML a TAG que deseja */
 [width] {
-    
+    background-color: yellow;
+}
+
+/* Seleciona só o que tem o por exemplo o tamanho que você precisa */
+[width = "600"] {
+    background-color: violet;
+}
+
+/* Selecionar todos que tem o Palavra desejada */
+[title~="titulo"] {
+    background-color: sienna;
+}
+
+/* Seleciona todas as palavras QUE TEM a PRIMERA LETRA que você deseje*/
+[title^="t"] {
+    color: white;
+}
+
+/* Seleciona todas as palavras QUE TEM a ULTIMA LETRA que você deseje*/
+[title$="1"] {
+    color: brown;
+}
+
+/* Seleciona todas as palavras QUE TEM a CENTRO AS LETRAS que você deseje*/
+[title*="tu"] {
+    color: chartreuse;
 }
