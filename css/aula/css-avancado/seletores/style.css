@@ -16,7 +16,13 @@
     background-color: blue;
 }
 
-
+/* Seleciona o ter tem dentro do HTML a TAG que deseja */
 [width] {
-    
+    background-color: yellow;
 }
+
+/* Seleciona só o que tem o por exemplo o tamanho que você precisa */
+[width = "600"] {
+    background-color: violet;
+}
+
