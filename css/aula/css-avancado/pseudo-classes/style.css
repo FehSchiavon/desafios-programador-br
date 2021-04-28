@@ -14,3 +14,31 @@ li:first-child {
 li:first-of-type {
     color: cadetblue;
 }
+
+/* Para pegar o Segundo Filho da Hirarquia que você quiser */
+li:nth-child(2) {
+    color: crimson;
+}
+
+/* NTH vai pegar Segundo item da TAG que você quiser, não precisa esta ligado ao Pai da classe */
+li:nth-of-type(4) {
+    color: darkmagenta;
+}
+
+/* Ele vai pegar a Hiranquia de Tras para Frente do Ultimo para o Primeiro */
+li:nth-last-child(3) {
+    color: darkorange;
+}
+
+/* Vai funcionar igual o NTH-OF-TYPE só que dá forma invertida */
+li:last-of-type {
+    color: deeppink;
+}
+
+/* === Extra === */
+/* Por usar o 2n que seria todos o números que sao divisiveis por 2 */
+li:nth-of-type(2n) {}
+/* Todos os numeros que sao IMPAR - ODD */
+li:nth-of-type(odd) {}
+/* Todos os numeros que sao PAR - EVEn */
+li:nth-of-type(even) {}
