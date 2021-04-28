@@ -37,8 +37,21 @@ li:last-of-type {
 
 /* === Extra === */
 /* Por usar o 2n que seria todos o números que sao divisiveis por 2 */
-li:nth-of-type(2n) {}
+li:nth-of-type(2n) {
+    font-weight: bolder;
+}
 /* Todos os numeros que sao IMPAR - ODD */
-li:nth-of-type(odd) {}
-/* Todos os numeros que sao PAR - EVEn */
-li:nth-of-type(even) {}
+li:nth-of-type(odd) {
+    background-color: gainsboro;
+}
+/* Todos os numeros que sao PAR - EVEN */
+li:nth-of-type(even) {
+    background-color: indigo;
+}
+/* Dá para fazer até contas para definir com Xn - 3 */
+li:nth-of-type(7n - 2) {
+    color: white;
+}
+
+
+
