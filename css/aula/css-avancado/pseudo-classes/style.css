@@ -9,6 +9,8 @@ li:first-child {
     color: blue;
 }
 
+/* Este Pseudo Class pega o primeiro Item a TAG que você escolheu, ele não precisa esta ligado
+   ao Pai da TAG selecionada */
 li:first-of-type {
-    
+    color: cadetblue;
 }
