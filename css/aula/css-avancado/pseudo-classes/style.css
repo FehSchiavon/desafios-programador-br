@@ -1,0 +1,14 @@
+/* Quando selecionado ele fica muda a cor, resumindo quando focado */
+input:focus {
+    color: red;
+}
+
+/* Ele seleciona o Primeiro elementos da TAG que você chamar, porém se tiver outro na frente
+   Ele não vai funcionar */
+li:first-child {
+    color: blue;
+}
+
+li:first-of-type {
+    
+}
