@@ -1,0 +1,13 @@
+:root {
+  --var-color: aqua;
+}
+
+p1 {
+    color: var(--var-color);
+    font-size: 25px;
+}
+
+p2 {
+    color: var(--var-color);
+    font-size: 14px;
+}
