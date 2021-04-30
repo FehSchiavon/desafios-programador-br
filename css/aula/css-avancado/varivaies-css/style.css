@@ -1,13 +1,13 @@
 :root {
-  --var_color: aqua;
+  --var-color: aqua;
 }
 
 p1 {
-    color: var(--var_color);
+    color: var(--var-color);
     font-size: 25px;
 }
 
 p2 {
-    color: var(--var_color);
+    color: var(--var-color);
     font-size: 14px;
 }
