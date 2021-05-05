@@ -7,20 +7,16 @@
     color: white;
 }
 
-    /* Order é para mudar a ordem os itens que você já possui criado sendo por padrao 0
-       e podendo ser anterado de ... -1/ 0 / 1 / 2 / 3 ... */
 .r1 {
-    order: 3;
     background-color: red;
 }
 
 .r2 {
-    order: 1;
+    align-self: center;
     background-color: blue;
 }
 
 .r3 {
-    order: 2;
     background-color: green;
 }
 
