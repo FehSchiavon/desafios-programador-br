@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    
+
+    background-color: darkgray;
+    height: 600px;
+    color: white;
+}
+
+.r1 {
+    /* Flex Grow permite o item crescer e por padrao ele vem como 0 e para habilitar ele tem
+       que trocar para 1 ai ele se estica */
+       flex-grow: 1;
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    /* Flex Shrink permite que voce deixe um item especifico com o tamanho que ele era
+       Por padrao ele vem com 1, mas para habilitar ele é só trocar para 0 */
+    flex-shrink: 0;
+    background-color: green;
+}
+
+.react {
+    width: 300px;
+    height: 100px;
+}
