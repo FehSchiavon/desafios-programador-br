@@ -7,21 +7,20 @@
     color: white;
 }
 
+    /* Order é para mudar a ordem os itens que você já possui criado sendo por padrao 0
+       e podendo ser anterado de ... -1/ 0 / 1 / 2 / 3 ... */
 .r1 {
-    /* Flex Grow permite o item crescer e por padrao ele vem como 0 e para habilitar ele tem
-       que trocar para 1 ai ele se estica */
-       flex-grow: 1;
+    order: 3;
     background-color: red;
 }
 
 .r2 {
+    order: 1;
     background-color: blue;
 }
 
 .r3 {
-    /* Flex Shrink permite que voce deixe um item especifico com o tamanho que ele era
-       Por padrao ele vem com 1, mas para habilitar ele é só trocar para 0 */
-    flex-shrink: 0;
+    order: 2;
     background-color: green;
 }
 
