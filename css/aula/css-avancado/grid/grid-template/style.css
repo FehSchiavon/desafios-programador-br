@@ -4,8 +4,13 @@
     padding: 10px;
     background-color: gray;
 
+    /* Grid Rows = Linhas / Grid Columns - Colunas */
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 3fr 1fr;
+
+    /* Grid template uni GRID ROWS / GRID COLUMNS */
+    grid-template: auto auto / 1fr 3fr 1fr;
+    /* Resumindo grid-template: linhas / colunas; */
 }
 
 .r1 {
