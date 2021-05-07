@@ -5,12 +5,8 @@
     background-color: gray;
 
     /* Grid template uni GRID ROWS / GRID COLUMNS */
-    grid-template: 100px 100px / 1fr 2fr 1fr;
+    grid-template: 100px 100px / auto auto auto;
     /* Resumindo grid-template: linhas / colunas; */
-
-    /* Gap é espacamento Linha e Colunas*/
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
 
     /* Gab Global tendo LINHAS / COLUNAS */
     grid-gap: 30px;
@@ -27,4 +23,9 @@
 
 .r3 {
     background-color: green;
+}
+
+.rect {
+    width: 100px;
+    height: 100px;
 }
