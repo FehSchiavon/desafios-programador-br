@@ -1,0 +1,30 @@
+.container {
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: gray;
+
+    /* Grid template uni GRID ROWS / GRID COLUMNS */
+    grid-template: 100px 100px / 1fr 2fr 1fr;
+    /* Resumindo grid-template: linhas / colunas; */
+
+    /* Gap é espacamento Linha e Colunas*/
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    /* Gab Global tendo LINHAS / COLUNAS */
+    grid-gap: 30px;
+
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
