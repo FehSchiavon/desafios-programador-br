@@ -1,15 +1,22 @@
 .container {
+    height: 500px;
     color: white;
     display: grid;
     padding: 10px;
     background-color: gray;
 
     /* Grid template uni GRID ROWS / GRID COLUMNS */
-    grid-template: 100px 100px / auto auto auto;
+    grid-template: auto auto / auto auto auto;
     /* Resumindo grid-template: linhas / colunas; */
 
     /* Gab Global tendo LINHAS / COLUNAS */
     grid-gap: 30px;
+
+    /* Centraliza Horizontalmente */
+    justify-items: center;
+
+    /* Centraliza Verticalmente */
+    align-items: center;
 
 }
 
