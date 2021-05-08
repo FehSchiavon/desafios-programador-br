@@ -13,10 +13,10 @@
     grid-gap: 30px;
 
     /* Centraliza Horizontalmente */
-    justify-items: center;
+    justify-content: center;
 
     /* Centraliza Verticalmente */
-    align-items: center;
+    align-content: center;
 
 }
 
