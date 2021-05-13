@@ -1,16 +1,23 @@
 .container {
+    height: 500px;
     color: white;
     display: grid;
     padding: 10px;
     background-color: gray;
 
-    /* Grid Rows = Linhas / Grid Columns - Colunas */
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 3fr 1fr;
-
     /* Grid template uni GRID ROWS / GRID COLUMNS */
-    grid-template: auto auto / 1fr 3fr 1fr;
+    grid-template: auto auto / auto auto auto;
     /* Resumindo grid-template: linhas / colunas; */
+
+    /* Gab Global tendo LINHAS / COLUNAS */
+    grid-gap: 30px;
+
+    /* Centraliza Horizontalmente */
+    justify-content: center;
+
+    /* Centraliza Verticalmente */
+    align-content: center;
+
 }
 
 .r1 {
@@ -23,4 +30,9 @@
 
 .r3 {
     background-color: green;
+}
+
+.rect {
+    width: 100px;
+    height: 100px;
 }
