@@ -20,6 +20,6 @@
     border-style: solid;
     animation-name: changeColor;
     animation-duration: 7s;
-    animation-delay: -2s;
+    animation-iteration-count: infinite;
 }
 
