@@ -1,0 +1,24 @@
+@keyframes changeColor {
+    /* Inicio */
+    /* from {background-color: red;} */
+
+    /* Fim */
+    /* to {background-color: blue;} */
+
+    /* Outra forma de usar */
+    0% {background-color: red;}
+    25% {background-color: green;}
+    50% {background-color: yellow;}
+    75% {background-color: hotpink;}
+    100% {background-color: blue;}
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    animation-name: changeColor;
+    animation-duration: 15s;
+}
+
