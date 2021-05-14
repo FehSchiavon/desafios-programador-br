@@ -21,6 +21,6 @@
     animation-name: changeColor;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-fill-mode: both;
 }
 
