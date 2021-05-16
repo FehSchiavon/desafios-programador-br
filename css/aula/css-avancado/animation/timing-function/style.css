@@ -14,6 +14,11 @@
 }
 
 
+@keyframes move {
+    0% {left: 0px;}
+    100% {left: 300px;}
+}
+
 .box {
     width: 200px;
     height: 200px;
@@ -22,5 +27,8 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
+
+    animation-name: move;
+    
 }
 
