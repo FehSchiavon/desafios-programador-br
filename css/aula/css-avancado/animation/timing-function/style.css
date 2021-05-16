@@ -6,11 +6,11 @@
     /* to {background-color: blue;} */
 
     /* Outra forma de usar */
-    0% {background-color: red; width: 200px;}
+    /* 0% {background-color: red; width: 200px;}
     25% {background-color: green;}
     50% {background-color: yellow; width: 400px;}
     75% {background-color: hotpink;}
-    100% {background-color: blue; width: 100px;}
+    100% {background-color: blue; width: 100px;} */
 }
 
 
@@ -20,15 +20,17 @@
 }
 
 .box {
+    position: relative;
     width: 200px;
     height: 200px;
     border-style: solid;
-    animation-name: changeColor;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
+    /* animation-name: changeColor; */
+
 
     animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
     
 }
 
