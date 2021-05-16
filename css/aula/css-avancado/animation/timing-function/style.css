@@ -29,6 +29,9 @@
     animation-duration: 7s;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
+
+    /* De forma compactar de usar o Animation */
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 
