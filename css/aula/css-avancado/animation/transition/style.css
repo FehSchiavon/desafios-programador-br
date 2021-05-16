@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    padding: 20px;
+    background: #42BBCA;
+    color: #fff;
+    font-size: 30px;
+
+    /* transition-property: background-color, padding;
+    transition-duration: 500ms, 1s;
+    transition-delay: 100ms; */
+
+    /* Shord Hand Transition */
+    /* transition: name-property transition-duration transition-delay timing-funtion, 
+                   Replicar para outras transition... */
+    transition: background-color 500ms, padding 800ms;
+}
+
+.btn:hover {
+    background-color: #2248CA;
+    padding-left: 30px;
+    padding-right: 30px;
+}
