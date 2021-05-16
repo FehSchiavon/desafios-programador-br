@@ -24,13 +24,29 @@
     width: 200px;
     height: 200px;
     border-style: solid;
-    /* animation-name: changeColor; */
-
 
     animation-name: move;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    
-    
+    animation-duration: 7s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
 }
+
+
+.div1 {
+    animation-timing-function: linear;
+}
+
+.div2 {
+    animation-timing-function: ease;
+}
+.div3 {
+    animation-timing-function: ease-in;
+}
+.div4 {
+    animation-timing-function: ease-out;
+}
+.div5 {
+    animation-timing-function: ease-in-out;
+}
+
 
