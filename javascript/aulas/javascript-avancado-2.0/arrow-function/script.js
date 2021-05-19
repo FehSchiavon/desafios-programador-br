@@ -1,22 +1,44 @@
-
-function speakGeneric() {
-    console.log(this.sound)
+// Forma Tradicional
+function dobro(x) {
+    console.log(2 * x)
 }
 
-let dog = {
-    sound: "Au Au",
-    speak: speakGeneric
+dobro(2)
+
+// Forma Dentro de uma Variavel (Funcao Anonima)
+let dobro2 = function (x) {
+    console.log(2 * x)
 }
 
-let cat = {
-    sound: "Miau",
-    speak: speakGeneric
+dobro2(4)
+
+// Arrow Function Tradicional (Funcao Anonima)
+let dobro3 = (x) => {
+    console.log(2 * x)
 }
 
-dog.speak()
-cat.speak()
+dobro3(7)
 
-// Bind server para voce nao deixar o This sem nada
-// Porque o This ele precisa de algo antes se nao ele aparece como Underfind
-let bindedFunction = speakGeneric.bind(cat)
-bindedFunction()
+// Arrow Function Simplificada com UM Argumento (Funcao Anonima)
+let dobro4 = x => {
+    console.log(2 * x)
+}
+
+dobro4(13)
+
+// Arrow Function Simplificada com UM Argumento usando RETURN (Funcao Anonima)
+let dobro5 = x => {
+    return(2 * x)
+}
+
+console.log(dobro5(1))
+
+// Arrow Function SUPER Simplificada com UM Argumento usando RETURN (Funcao Anonima)
+let dobro6 = x => (2 * x)
+
+console.log(dobro6(100))
+
+// Ou
+let dobro7 = x => 2 * x
+
+console.log(dobro7(337))
