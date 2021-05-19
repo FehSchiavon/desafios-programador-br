@@ -15,3 +15,8 @@ let cat = {
 
 dog.speak()
 cat.speak()
+
+// Bind server para voce nao deixar o This sem nada
+// Porque o This ele precisa de algo antes se nao ele aparece como Underfind
+let bindedFunction = speakGeneric.bind(cat)
+bindedFunction()
