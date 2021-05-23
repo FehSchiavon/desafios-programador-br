@@ -4,7 +4,7 @@ function inserirUsuario(nome) {
     let promise = new Promise(function(resolve, reject) {
         setTimeout(() => {
             usuarios.push(nome)
-            
+            // Se mudar para True, vai parecer qual foi o erro
             let error = false
 
             if(!error) {
