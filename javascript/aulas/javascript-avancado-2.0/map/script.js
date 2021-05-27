@@ -11,5 +11,10 @@ let alunos = [
 ]
 
 function nomeEidade(aluno) {
-    return aluno
+    return aluno.nome + " tem " + aluno.idade + " anos"
 }
+
+console.log(alunos.map(nomeEidade))
+
+
+// Entendo mais sobre MAP
