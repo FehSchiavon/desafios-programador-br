@@ -26,3 +26,12 @@ function nomeEidade2(aluno) {
 }
 
 console.log(alunos.map(nomeEidade2))
+
+
+// Entendo mais sobre MAP - ERROS usado +=
+function nomeEidade3(aluno) {
+    aluno.idade += 5
+    return aluno
+}
+
+console.log(alunos.map(nomeEidade3))
