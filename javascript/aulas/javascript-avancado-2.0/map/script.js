@@ -10,11 +10,19 @@ let alunos = [
     novoAluno("Fantasma", 18),
 ]
 
-function nomeEidade(aluno) {
+function nomeEidade1(aluno) {
     return aluno.nome + " tem " + aluno.idade + " anos"
 }
 
-console.log(alunos.map(nomeEidade))
+console.log(alunos.map(nomeEidade1))
 
 
 // Entendo mais sobre MAP
+function nomeEidade2(aluno) {
+    return {
+        name: aluno.nome,
+        age: aluno.idade
+    }
+}
+
+console.log(alunos.map(nomeEidade2))
