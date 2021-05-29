@@ -24,3 +24,10 @@ alunoB.idade = 25
 
 let alunoC = {...alunoA}
 alunoC.idade = 25
+
+
+// Atribuição por VALOR
+// Faz uma cópia do orginal, mas não reflete no original
+
+// Atribuição por REFERENCIA
+// Não faz um cópia do original, mas modifica o elemento original
