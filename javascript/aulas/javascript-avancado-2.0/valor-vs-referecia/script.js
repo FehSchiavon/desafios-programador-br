@@ -1,20 +1,26 @@
-// function novoAluno(nome, idade) {
-//     return {nome, idade}
-// }
+// Array
+let turmaA = ["Igor", "José", "Paula"] 
 
-// let alunos = [
-//     novoAluno("Mario", 23),
-//     novoAluno("Luigi", 45),
-//     novoAluno("Princesa", 29),
-//     novoAluno("Bonzer", 35),
-//     novoAluno("Fantasma", 18),
-// ]
+// Sever para desvincular os Arrays
+let turmaB = turmaA.slice()
 
-// function nomeEidade3(aluno) {
-//     aluno.idade += 5
-//     return aluno
-// }
+// Ou com [...]
+let turmaC = [...turmaA]
 
-// console.log(alunos.map(nomeEidade3))
+turmaB.push("João")
 
-// let aluno = {nome:}
+
+// ====================================
+
+
+
+// Objetos
+let alunoA = {nome: "Igor", idade: 23}
+
+let alunoB = Object.arguments({}, alunoA)
+alunoB.idade = 25
+
+// Ou com {...}
+
+let alunoC = {...alunoA}
+alunoC.idade = 25
