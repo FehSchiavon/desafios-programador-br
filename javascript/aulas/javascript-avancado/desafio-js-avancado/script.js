@@ -11,17 +11,17 @@ let alunos = [
     criarAlunos("Ronaldo", 35)
 ]
 
-
-for(aluno of alunos) {
-    // console.log(aluno.nome)
-    let turmaAlunos = aluno.nome + aluno.nome
-    // console.log(turmaAlunos)
-}
-
 // Criando REDUCE MANUAL
 for(let i = 0; i < alunos.length; i++) {
-    console.log(alunos[i])
-    let turmaAlunos = []
-    turmaAlunos.push(alunos[i].nome)
-    console.log(turmaAlunos)
+    // console.log(alunos[i])
+    // let turmaAlunos = alunos[i].nome
+    // console.log(turmaAlunos)
+
+
+
+    
+    
+    let juntarTurma = alunos[0].nome += alunos[i].nome
+    console.log(juntarTurma)
 }
+
