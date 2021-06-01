@@ -11,7 +11,6 @@ let alunos = [
     criarAlunos("Ronaldo", 35)
 ]
 
-console.log(alunos.length)
 
 for(aluno of alunos) {
     // console.log(aluno.nome)
@@ -19,8 +18,10 @@ for(aluno of alunos) {
     // console.log(turmaAlunos)
 }
 
+// Criando REDUCE MANUAL
 for(let i = 0; i < alunos.length; i++) {
     console.log(alunos[i])
-    let turmaAlunos = alunos[i].nome
+    let turmaAlunos = []
+    turmaAlunos.push(alunos[i].nome)
     console.log(turmaAlunos)
 }
