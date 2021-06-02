@@ -11,17 +11,46 @@ let alunos = [
     criarAlunos("Ronaldo", 35)
 ]
 
-// Criando REDUCE MANUAL
-for(let i = 0; i < alunos.length; i++) {
-    // console.log(alunos[i])
-    // let turmaAlunos = alunos[i].nome
-    // console.log(turmaAlunos)
+let jogadores = [
+    criarAlunos("Ana", 77),
+    criarAlunos("Julio", 30),
+    criarAlunos("Gabriel", 11),
+    criarAlunos("Natan", 17),
+    criarAlunos("Andreia", 98)
+]
 
 
 
-    
-    
-    let juntarTurma = alunos[0].nome += alunos[i].nome
-    console.log(juntarTurma)
+
+
+// Criando REDUCE MANUAL NOME
+function reduzirManualNome(array, valor) {
+    let todosAlunos = valor
+
+    for(let i = 0; i < array.length; i++) {     
+        todosAlunos  += array[i].nome
+    }
+
+    console.log(todosAlunos)
 }
 
+reduzirManualNome(alunos, "")
+reduzirManualNome(jogadores, "")
+
+
+
+
+
+// Criando REDUCE MANUAL IDADE
+function reduzirManualIdade(array, valor) {
+    let todosAlunos = valor
+
+    for(let i = 0; i < array.length; i++) {     
+        todosAlunos  += array[i].idade
+    }
+
+    console.log(todosAlunos)
+}
+
+reduzirManualIdade(alunos, 0)
+reduzirManualIdade(jogadores, 0)
