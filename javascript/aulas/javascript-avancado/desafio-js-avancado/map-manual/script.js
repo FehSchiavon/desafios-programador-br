@@ -1,4 +1,4 @@
-// REDUCE MANUAL
+// MAP MANUAL
 function criarAlunos(nome, idade) {
     return {nome, idade}
 }
