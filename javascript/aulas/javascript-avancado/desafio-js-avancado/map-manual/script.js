@@ -30,5 +30,8 @@ for (let i = 0; i < alunos.length; i++) {
 }
 
 console.log(newArray)
+
+// MAP MANUAL MAIS AUTOMATICO - [] Criar
+
 // MAP TRADICIONAL
 console.log(alunos.map(nomeEidade))
