@@ -19,38 +19,16 @@ let jogadores = [
     criarAlunos("Andreia", 98)
 ]
 
-
-
-
-
-// Criando REDUCE MANUAL NOME
-function reduzirManualNome(array, valor) {
-    let todosAlunos = valor
-
-    for(let i = 0; i < array.length; i++) {     
-        todosAlunos  += array[i].nome
-    }
-
-    console.log(todosAlunos)
+function nomeEidade(aluno) {
+    return aluno.nome + " tem " + aluno.idade + " anos"
 }
 
-reduzirManualNome(alunos, "")
-reduzirManualNome(jogadores, "")
-
-
-
-
-
-// Criando REDUCE MANUAL IDADE
-function reduzirManualIdade(array, valor) {
-    let todosAlunos = valor
-
-    for(let i = 0; i < array.length; i++) {     
-        todosAlunos  += array[i].idade
-    }
-
-    console.log(todosAlunos)
+// MAP MANUAL
+let newArray = []
+for (let i = 0; i < alunos.length; i++) {    
+    newArray.push(nomeEidade(alunos[i]))
 }
 
-reduzirManualIdade(alunos, 0)
-reduzirManualIdade(jogadores, 0)
+console.log(newArray)
+// MAP TRADICIONAL
+console.log(alunos.map(nomeEidade))
