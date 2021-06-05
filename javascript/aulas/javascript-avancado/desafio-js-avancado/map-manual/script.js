@@ -1,4 +1,4 @@
-// REDUCE MANUAL
+// MAP MANUAL
 function criarAlunos(nome, idade) {
     return {nome, idade}
 }
@@ -19,38 +19,34 @@ let jogadores = [
     criarAlunos("Andreia", 98)
 ]
 
-
-
-
-
-// Criando REDUCE MANUAL NOME
-function reduzirManualNome(array, valor) {
-    let todosAlunos = valor
-
-    for(let i = 0; i < array.length; i++) {     
-        todosAlunos  += array[i].nome
-    }
-
-    console.log(todosAlunos)
+function nomeEidade(aluno) {
+    return aluno.nome + " tem " + aluno.idade + " anos"
 }
 
-reduzirManualNome(alunos, "")
-reduzirManualNome(jogadores, "")
-
-
-
-
-
-// Criando REDUCE MANUAL IDADE
-function reduzirManualIdade(array, valor) {
-    let todosAlunos = valor
-
-    for(let i = 0; i < array.length; i++) {     
-        todosAlunos  += array[i].idade
+// MAP MANUAL MAIS AUTOMATICO - [] Criar
+function mapManual(map) {
+    let newArray = []
+    for (let i = 0; i < map.length; i++) {    
+        newArray.push(nomeEidade(map[i]))
     }
-
-    console.log(todosAlunos)
+    return console.log(newArray)
 }
 
-reduzirManualIdade(alunos, 0)
-reduzirManualIdade(jogadores, 0)
+mapManual(alunos)
+mapManual(jogadores)
+
+
+
+
+
+// MAP MANUAL BEM MANUAL
+// let newArray = []
+// for (let i = 0; i < alunos.length; i++) {    
+//     newArray.push(nomeEidade(alunos[i]))
+// }
+
+// console.log(newArray)
+
+
+// MAP TRADICIONAL
+// console.log(alunos.map(nomeEidade))

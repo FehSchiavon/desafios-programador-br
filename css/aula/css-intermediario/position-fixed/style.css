@@ -1,0 +1,28 @@
+/* Position Fixed */
+/* Também usado para criar aqueles botao como WhatsApp */
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-red {
+    background-color: red;
+}
+
+.quadrado-blue {
+    position: fixed;
+    right: 0px;
+    bottom: 500px;
+    background-color: blue;
+}
+
+.quadrado-green {
+    background-color: green;
+}
+
+.quadro {
+    position: relative;
+    width: 500px;
+    height: 4000px;
+    border: 1px solid gray;
+}

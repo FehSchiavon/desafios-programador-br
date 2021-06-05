@@ -1,0 +1,27 @@
+/* Position Sticky ou Grudento*/
+/* Usando para criar SideBar ou Ofertas */
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-red {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: red;
+}
+
+.quadrado-blue {
+    background-color: blue;
+}
+
+.quadrado-green {
+    background-color: green;
+}
+
+.quadro {
+    width: 500px;
+    height: 4000px;
+    border: 1px solid gray;
+}
